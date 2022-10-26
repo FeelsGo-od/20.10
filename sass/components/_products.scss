@@ -1,0 +1,17 @@
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(302.5px, 1fr));
+    grid-gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.product {
+    &__title {
+        font-family: 'Readex Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
