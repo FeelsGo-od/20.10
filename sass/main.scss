@@ -1,3 +1,10 @@
 // to start watching changes --> $ npm run compile-sass
 
 @import './components/products';
+@import './components/skeleton';
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

@@ -1,6 +1,9 @@
-import fetch from './modules/fetching.js';
+import displayProducts from './modules/Products/displayProducts.js';
 
-// *get products
-// fetch('https://dummyjson.com/products').then((products) =>
-//   console.log(products)
-// );
+function handleProducts() {
+  let productsElem = document.querySelector('.products');
+
+  displayProducts(productsElem);
+}
+
+handleProducts();

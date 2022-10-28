@@ -1,17 +1,61 @@
+@font-face {
+    font-family: 'Readex Pro';
+    src: url('../../fonts/Readex-Pro-Font/ReadexPro-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../fonts/Inter/Inter-Regular.otf');
+}
+
 .products {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(302.5px, 1fr));
     grid-gap: 10px;
-    width: 100%;
+    width: 92%;
+    margin: 0 auto;
     justify-content: center;
 }
 
 .product {
+    cursor: pointer;
+
+    &:hover {
+        background: #f7f7f7;
+    }
+
+    &__image {
+        width: 303px;
+        height: 270px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     &__title {
         font-family: 'Readex Pro';
         font-style: normal;
         font-weight: 400;
         font-size: 22px;
         line-height: 28px;
+    }
+
+    &__description {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #4B4B4B;
+        margin: 9px 0 25px 0;
+    }
+
+    &__price {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
     }
 }
