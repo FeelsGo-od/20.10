@@ -1,38 +1,17 @@
-#card-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.card {
-    height: 55vh;
-    width: calc((100% / 3) - 16px);
-    margin: 8px;
-    border-radius: 3px;
-    transition: all 200ms ease-in-out;
-    display: flex;
-    align-items: center;
+#loader {
+    // same as products
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(302.5px, 1fr));
+    grid-gap: 10px;
+    width: 92%;
+    margin: 0 auto;
     justify-content: center;
 }
 
-.card:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.card-actions {
-    margin: 8px;
-    padding: 16px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#loader {
-    display: flex;
-}
-
 .skeleton-card {
-    height: 55vh;
-    width: calc((100% / 3) - 16px);
+    width: 100%;
+    height: 100%;
+    height: 35vh;
     border-radius: 3px;
     transition: all 200ms ease-in-out;
     position: relative;
