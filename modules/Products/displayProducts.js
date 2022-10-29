@@ -1,6 +1,10 @@
 import fetching from '../fetching.js';
 
-export default function displayProducts(dest) {
+export default function displayProducts(
+  dest,
+  byRating = false,
+  onlyFour = false
+) {
   let products = [];
 
   fetching('../../data/products.json').then((productsData) => {
@@ -21,32 +25,70 @@ export default function displayProducts(dest) {
       const endRange =
         currentPage == pageCount ? productsLimit : pageIndex * productsIncrease;
 
-      products.map((product) => {
-        if (product.id < startRange + 1 || product.id > endRange) return;
+      if (!byRating) {
+        //show all proucts
+        products.map((product) => {
+          if (product.id < startRange + 1 || product.id > endRange) return;
 
-        let description = product.description;
+          let description = product.description;
 
-        description.slice(0, 80);
+          dest.insertAdjacentHTML(
+            'beforeend',
+            `<div class="product">
+                          <div class="product__image"><img style="width: 100%; height: 100%; object-fit: contain;" src="${
+                            product.thumbnail
+                          }" alt=""></div>
+                          <div class="product__title">${product.title}</div>
+                          <div class="product__description">${
+                            description.slice(0, 80) + '...'
+                          }</div>
+                          <div class="product__price">$ ${
+                            product.price
+                          } USD</div>
+                      </div>`
+          );
+        });
+        // sort products by rating
+      } else if (byRating) {
+        let filterRating = products.filter((product) => {
+          return product.rating >= 5;
+        });
 
-        dest.insertAdjacentHTML(
-          'beforeend',
-          `<div class="product">
-                  <div class="product__image"><img style="width: 100%; height: 100%; object-fit: contain;" src="${
-                    product.thumbnail
-                  }" alt=""></div>
-                  <div class="product__title">${product.title}</div>
-                  <div class="product__description">${
-                    description.slice(0, 80) + '...'
-                  }</div>
-                  <div class="product__price">$ ${product.price} USD</div>
-              </div>`
-        );
-      });
+        let count = 0;
+
+        filterRating.map((product) => {
+          if (onlyFour) count++;
+          if (count > 4) return false;
+
+          if (product.id < startRange + 1 || product.id > endRange) return;
+
+          let description = product.description;
+
+          dest.insertAdjacentHTML(
+            'beforeend',
+            `<div class="product">
+                                    <div class="product__image"><img style="width: 100%; height: 100%; object-fit: contain;" src="${
+                                      product.thumbnail
+                                    }" alt=""></div>
+                                    <div class="product__title">${
+                                      product.title
+                                    }</div>
+                                    <div class="product__description">${
+                                      description.slice(0, 80) + '...'
+                                    }</div>
+                                    <div class="product__price">$ ${
+                                      product.price
+                                    } USD</div>
+                                </div>`
+          );
+        });
+      }
     };
     addCards(currentPage);
 
     let throttleTimer;
 
+    // optimize infinite-scroll with throttle
     const throttle = (callback, time) => {
       if (throttleTimer) return;
 
@@ -76,7 +118,7 @@ export default function displayProducts(dest) {
     };
 
     const removeInfiniteScroll = () => {
-      loader.remove();
+      if (loader) loader.remove();
       window.removeEventListener('scroll', handleInfiniteScroll);
     };
 
