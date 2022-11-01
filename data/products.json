@@ -9,7 +9,7 @@
             "stock": 94,
             "brand": "Apple",
             "category": "smartphones",
-            "thumbnail": "https://i.wpimg.pl/c/646x/m.komorkomania.pl/iphone-9-ca2035362d784993c08f92f.jpg",
+            "thumbnail": "",
             "images": [
                 "https://dummyjson.com/image/i/products/1/1.jpg",
                 "https://dummyjson.com/image/i/products/1/2.jpg",
@@ -28,7 +28,7 @@
             "stock": 34,
             "brand": "Apple",
             "category": "smartphones",
-            "thumbnail": "https://files.refurbed.com/ii/iphone-x-1639476570.jpg",
+            "thumbnail": "",
             "images": [
                 "https://dummyjson.com/image/i/products/2/1.jpg",
                 "https://dummyjson.com/image/i/products/2/2.jpg",
@@ -46,9 +46,9 @@
             "stock": 36,
             "brand": "Samsung",
             "category": "smartphones",
-            "thumbnail": "https://cdn.shopify.com/s/files/1/2551/9654/products/337GF-GLSAM165_480x480.jpg?v=1633852867",
+            "thumbnail": "",
             "images": [
-                "https://dummyjson.com/image/i/products/3/1.jpg"
+                ""
             ]
         },
         {
@@ -97,7 +97,7 @@
             "stock": 83,
             "brand": "Apple",
             "category": "laptops",
-            "thumbnail": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp14-spacegray-select-202110_GEO_PL?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1633657362000",
+            "thumbnail": "",
             "images": [
                 "https://dummyjson.com/image/i/products/6/1.png",
                 "https://dummyjson.com/image/i/products/6/2.jpg",
@@ -115,7 +115,7 @@
             "stock": 50,
             "brand": "Samsung",
             "category": "laptops",
-            "thumbnail": "https://allegro.stati.pl/AllegroIMG/PRODUCENCI/SAMSUNG/NP750XDA/Samsung-Galaxy-Book-NP750XDA-prawy-bok.jpg",
+            "thumbnail": "",
             "images": [
                 "https://dummyjson.com/image/i/products/7/1.jpg",
                 "https://dummyjson.com/image/i/products/7/2.jpg",
@@ -152,7 +152,7 @@
             "stock": 96,
             "brand": "Infinix",
             "category": "laptops",
-            "thumbnail": "https://infinix-staging-s3.s3.ap-south-1.amazonaws.com/media/mucnpu0c/1000x1497_0000s_0002s_0004_3.jpg",
+            "thumbnail": "",
             "images": [
                 "https://dummyjson.com/image/i/products/9/1.jpg",
                 "https://dummyjson.com/image/i/products/9/2.png",
@@ -171,7 +171,7 @@
             "stock": 89,
             "brand": "HP Pavilion",
             "category": "laptops",
-            "thumbnail": "https://a.allegroimg.com/s1024/0c8aab/4443f6b14ac6aa559166ff19731e",
+            "thumbnail": "",
             "images": [
                 "https://dummyjson.com/image/i/products/10/1.jpg",
                 "https://dummyjson.com/image/i/products/10/2.jpg",
@@ -261,7 +261,7 @@
             "stock": 34,
             "brand": "Apple",
             "category": "smartphones",
-            "thumbnail": "https://files.refurbed.com/ii/iphone-x-1639476570.jpg",
+            "thumbnail": "",
             "images": [
                 "https://dummyjson.com/image/i/products/2/1.jpg",
                 "https://dummyjson.com/image/i/products/2/2.jpg",
@@ -279,7 +279,7 @@
             "stock": 36,
             "brand": "Samsung",
             "category": "smartphones",
-            "thumbnail": "https://cdn.shopify.com/s/files/1/2551/9654/products/337GF-GLSAM165_480x480.jpg?v=1633852867",
+            "thumbnail": "",
             "images": [
                 "https://dummyjson.com/image/i/products/3/1.jpg"
             ]
@@ -328,9 +328,9 @@
             "discountPercentage": 11.02,
             "rating": 4.57,
             "stock": 83,
-            "brand": "APPle",
+            "brand": "Apple",
             "category": "laptops",
-            "thumbnail": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp14-spacegray-select-202110_GEO_PL?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1633657362000",
+            "thumbnail": "",
             "images": [
                 "https://dummyjson.com/image/i/products/6/1.png",
                 "https://dummyjson.com/image/i/products/6/2.jpg",
@@ -348,7 +348,7 @@
             "stock": 50,
             "brand": "Samsung",
             "category": "laptops",
-            "thumbnail": "https://allegro.stati.pl/AllegroIMG/PRODUCENCI/SAMSUNG/NP750XDA/Samsung-Galaxy-Book-NP750XDA-prawy-bok.jpg",
+            "thumbnail": "",
             "images": [
                 "https://dummyjson.com/image/i/products/7/1.jpg",
                 "https://dummyjson.com/image/i/products/7/2.jpg",
@@ -385,7 +385,7 @@
             "stock": 96,
             "brand": "Infinix",
             "category": "laptops",
-            "thumbnail": "https://infinix-staging-s3.s3.ap-south-1.amazonaws.com/media/mucnpu0c/1000x1497_0000s_0002s_0004_3.jpg",
+            "thumbnail": "",
             "images": [
                 "https://dummyjson.com/image/i/products/9/1.jpg",
                 "https://dummyjson.com/image/i/products/9/2.png",
@@ -404,7 +404,7 @@
             "stock": 89,
             "brand": "HP Pavilion",
             "category": "laptops",
-            "thumbnail": "https://a.allegroimg.com/s1024/0c8aab/4443f6b14ac6aa559166ff19731e",
+            "thumbnail": "",
             "images": [
                 "https://dummyjson.com/image/i/products/10/1.jpg",
                 "https://dummyjson.com/image/i/products/10/2.jpg",
@@ -468,6 +468,472 @@
         },
         {
             "id": 27,
+            "title": "iPad",
+            "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+            "price": 610,
+            "discountPercentage": 9.18,
+            "rating": 4.43,
+            "stock": 15,
+            "brand": "Apple",
+            "category": "laptops",
+            "thumbnail": "./images/product4.png",
+            "images": [
+                "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-air-select-wifi-blue-202203?wid=1765&hei=2000&fmt=jpeg&qlt=95&.v=1645065732688",
+                "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-mini-select-202109_FMT_WHH?wid=2000&hei=2000&fmt=jpeg&qlt=90&.v=1631751019000",
+                "https://www.tradeinn.com/f/13777/137777411/apple-ipad-128gb-10.2.jpg",
+                "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/refurb-ipad-air-wifi-gold-2019?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1580949161836"
+            ]
+        },
+        {
+            "id": 28,
+            "title": "iPhone X",
+            "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+            "price": 899,
+            "discountPercentage": 17.94,
+            "rating": 5.44,
+            "stock": 34,
+            "brand": "Apple",
+            "category": "smartphones",
+            "thumbnail": "",
+            "images": [
+                "https://dummyjson.com/image/i/products/2/1.jpg",
+                "https://dummyjson.com/image/i/products/2/2.jpg",
+                "https://dummyjson.com/image/i/products/2/3.jpg",
+                "https://dummyjson.com/image/i/products/2/thumbnail.jpg"
+            ]
+        },
+        {
+            "id": 29,
+            "title": "Samsung Universe 9",
+            "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+            "price": 1249,
+            "discountPercentage": 15.46,
+            "rating": 5.09,
+            "stock": 36,
+            "brand": "Samsung",
+            "category": "smartphones",
+            "thumbnail": "",
+            "images": [
+                ""
+            ]
+        },
+        {
+            "id": 30,
+            "title": "OPPOF19",
+            "description": "OPPO F19 is officially announced on April 2021.",
+            "price": 280,
+            "discountPercentage": 17.91,
+            "rating": 4.3,
+            "stock": 123,
+            "brand": "OPPO",
+            "category": "smartphones",
+            "thumbnail": "https://www.oppo.com/content/dam/oppo/product-asset-library/f19/f19-overview-v1/v1/assets/kvr-1920.png",
+            "images": [
+                "https://dummyjson.com/image/i/products/4/1.jpg",
+                "https://dummyjson.com/image/i/products/4/2.jpg",
+                "https://dummyjson.com/image/i/products/4/3.jpg",
+                "https://dummyjson.com/image/i/products/4/4.jpg",
+                "https://dummyjson.com/image/i/products/4/thumbnail.jpg"
+            ]
+        },
+        {
+            "id": 31,
+            "title": "Huawei P30",
+            "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+            "price": 499,
+            "discountPercentage": 10.58,
+            "rating": 4.09,
+            "stock": 32,
+            "brand": "Huawei",
+            "category": "smartphones",
+            "thumbnail": "https://image.ceneostatic.pl/data/products/77762072/i-huawei-p30-6-128gb-opal.jpg",
+            "images": [
+                "https://dummyjson.com/image/i/products/5/1.jpg",
+                "https://dummyjson.com/image/i/products/5/2.jpg",
+                "https://dummyjson.com/image/i/products/5/3.jpg"
+            ]
+        },
+        {
+            "id": 32,
+            "title": "MacBook Pro",
+            "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+            "price": 1749,
+            "discountPercentage": 11.02,
+            "rating": 5.27,
+            "stock": 83,
+            "brand": "Apple",
+            "category": "laptops",
+            "thumbnail": "",
+            "images": [
+                "https://dummyjson.com/image/i/products/6/1.png",
+                "https://dummyjson.com/image/i/products/6/2.jpg",
+                "https://dummyjson.com/image/i/products/6/3.png",
+                "https://dummyjson.com/image/i/products/6/4.jpg"
+            ]
+        },
+        {
+            "id": 33,
+            "title": "Samsung Galaxy Book",
+            "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+            "price": 1499,
+            "discountPercentage": 4.15,
+            "rating": 5.02,
+            "stock": 50,
+            "brand": "Samsung",
+            "category": "laptops",
+            "thumbnail": "",
+            "images": [
+                "https://dummyjson.com/image/i/products/7/1.jpg",
+                "https://dummyjson.com/image/i/products/7/2.jpg",
+                "https://dummyjson.com/image/i/products/7/3.jpg",
+                "https://dummyjson.com/image/i/products/7/thumbnail.jpg"
+            ]
+        },
+        {
+            "id": 34,
+            "title": "Microsoft Surface Laptop 4",
+            "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+            "price": 1499,
+            "discountPercentage": 10.23,
+            "rating": 5.00,
+            "stock": 68,
+            "brand": "Microsoft Surface",
+            "category": "laptops",
+            "thumbnail": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWBrzy?ver=85d4",
+            "images": [
+                "https://dummyjson.com/image/i/products/8/1.jpg",
+                "https://dummyjson.com/image/i/products/8/2.jpg",
+                "https://dummyjson.com/image/i/products/8/3.jpg",
+                "https://dummyjson.com/image/i/products/8/4.jpg",
+                "https://dummyjson.com/image/i/products/8/thumbnail.jpg"
+            ]
+        },
+        {
+            "id": 35,
+            "title": "Infinix INBOOK",
+            "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
+            "price": 1099,
+            "discountPercentage": 11.83,
+            "rating": 4.54,
+            "stock": 96,
+            "brand": "Infinix",
+            "category": "laptops",
+            "thumbnail": "",
+            "images": [
+                "https://dummyjson.com/image/i/products/9/1.jpg",
+                "https://dummyjson.com/image/i/products/9/2.png",
+                "https://dummyjson.com/image/i/products/9/3.png",
+                "https://dummyjson.com/image/i/products/9/4.jpg",
+                "https://dummyjson.com/image/i/products/9/thumbnail.jpg"
+            ]
+        },
+        {
+            "id": 36,
+            "title": "HP Pavilion 15-DK1056WM",
+            "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+            "price": 1099,
+            "discountPercentage": 6.18,
+            "rating": 4.43,
+            "stock": 89,
+            "brand": "HP Pavilion",
+            "category": "laptops",
+            "thumbnail": "",
+            "images": [
+                "https://dummyjson.com/image/i/products/10/1.jpg",
+                "https://dummyjson.com/image/i/products/10/2.jpg",
+                "https://dummyjson.com/image/i/products/10/3.jpg",
+                "https://dummyjson.com/image/i/products/10/thumbnail.jpeg"
+            ]
+        },
+        {
+            "id": 37,
+            "title": "MacBook Pro 13",
+            "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+            "price": 1200,
+            "discountPercentage": 4.18,
+            "rating": 5.13,
+            "stock": 12,
+            "brand": "Apple",
+            "category": "laptops",
+            "thumbnail": "./images/product1.png",
+            "images": [
+                "https://acom.pl/media/catalog/product/cache/0f7431f5367b37c067ffd8dcd36cc722/a/p/apple-macbook-pro-13-3-cala-m2-8-core-cpu-10-core-gpu-8gb-ram-256gb-ssd-klawiatura-us-srebrny-silver-23987_2.jpg",
+                "https://www.tradeinn.com/f/13787/137870850_4/apple-macbook-pro-13-m1-8gb-256gb-ssd-laptop.jpg",
+                "https://www.tradeinn.com/f/13787/137870849_2/apple-macbook-pro-13-m1-8gb-256gb-ssd-laptop.jpg",
+                "https://ispot.pl/img/imagecache/85001-86000/680x523/product-media/85001-86000/Apple-MacBook-Pro-13-chip-M2-8-core-CPU-10-core-GPU-RAM-16GB-512GB-SSD-Silver-25821-680x523-nobckgr.webp"
+            ]
+        },
+        {
+            "id": 38,
+            "title": "Smart Galaxy Watch 3",
+            "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+            "price": 12200,
+            "discountPercentage": 5.18,
+            "rating": 5.12,
+            "stock": 14,
+            "brand": "Galaxy",
+            "category": "watches",
+            "thumbnail": "./images/product2.png",
+            "images": [
+                "https://fs.siteor.com/gsmonline/files/testy/000959_samsung_galaxy_watch_3/003_samsung_galaxy_watch_3.jpg",
+                "https://image.ceneostatic.pl/data/products/95916892/i-samsung-galaxy-watch-3-sm-r840-45mm-srebrny.jpg",
+                "https://www.telepolis.pl/images/2020/06/Samsung-Galaxy-Watch-3-45mm-1200.jpg",
+                "https://image.ceneostatic.pl/data/products/95918954/e9a63ea2-e069-404d-8d36-f2868661421a_i-samsung-galaxy-watch-3-sm-r840-45mm-czarny.jpg"
+            ]
+        },
+        {
+            "id": 39,
+            "title": "MacBook Air M1",
+            "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+            "price": 1009,
+            "discountPercentage": 5.18,
+            "rating": 4.63,
+            "stock": 13,
+            "brand": "Apple",
+            "category": "laptops",
+            "thumbnail": "./images/product3.png",
+            "images": [
+                "https://ispot.pl/img/imagecache/18001-19000/680x680/product-media/18001-19000/Apple-Macbook-Air-13-8-rdzeniowy-procesor-Apple-M1-z-7-rdzeniowa-grafika-dysk-256-GB-SSD-Zloty-26874-680x680-nobckgr.webp",
+                "https://image.ceneostatic.pl/data/products/99105003/i-apple-macbook-air-13-3-m1-8gb-256gb-macos-mgn63zea.jpg",
+                "https://ecsmedia.pl/c/laptop-apple-macbook-air-13-apple-m1-13-3-ram-16-gb-ssd-256-gb-space-grey-mac-os-big-sur-b-iext85872499.jpg",
+                "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-space-gray-config-201810?wid=1078&hei=624&fmt=jpeg&qlt=90&.v=1664499515473"
+            ]
+        },
+        {
+            "id": 40,
+            "title": "iPad",
+            "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+            "price": 610,
+            "discountPercentage": 9.18,
+            "rating": 5.43,
+            "stock": 15,
+            "brand": "Apple",
+            "category": "laptops",
+            "thumbnail": "./images/product4.png",
+            "images": [
+                "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-air-select-wifi-blue-202203?wid=1765&hei=2000&fmt=jpeg&qlt=95&.v=1645065732688",
+                "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-mini-select-202109_FMT_WHH?wid=2000&hei=2000&fmt=jpeg&qlt=90&.v=1631751019000",
+                "https://www.tradeinn.com/f/13777/137777411/apple-ipad-128gb-10.2.jpg",
+                "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/refurb-ipad-air-wifi-gold-2019?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1580949161836"
+            ]
+        },
+        {
+            "id": 41,
+            "title": "iPhone X",
+            "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+            "price": 899,
+            "discountPercentage": 17.94,
+            "rating": 5.44,
+            "stock": 34,
+            "brand": "Apple",
+            "category": "smartphones",
+            "thumbnail": "",
+            "images": [
+                "https://dummyjson.com/image/i/products/2/1.jpg",
+                "https://dummyjson.com/image/i/products/2/2.jpg",
+                "https://dummyjson.com/image/i/products/2/3.jpg",
+                "https://dummyjson.com/image/i/products/2/thumbnail.jpg"
+            ]
+        },
+        {
+            "id": 42,
+            "title": "Samsung Universe 9",
+            "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+            "price": 1249,
+            "discountPercentage": 15.46,
+            "rating": 4.09,
+            "stock": 36,
+            "brand": "Samsung",
+            "category": "smartphones",
+            "thumbnail": "",
+            "images": [
+                "https://dummyjson.com/image/i/products/3/1.jpg"
+            ]
+        },
+        {
+            "id": 43,
+            "title": "OPPOF19",
+            "description": "OPPO F19 is officially announced on April 2021.",
+            "price": 280,
+            "discountPercentage": 17.91,
+            "rating": 4.3,
+            "stock": 123,
+            "brand": "OPPO",
+            "category": "smartphones",
+            "thumbnail": "https://www.oppo.com/content/dam/oppo/product-asset-library/f19/f19-overview-v1/v1/assets/kvr-1920.png",
+            "images": [
+                "https://dummyjson.com/image/i/products/4/1.jpg",
+                "https://dummyjson.com/image/i/products/4/2.jpg",
+                "https://dummyjson.com/image/i/products/4/3.jpg",
+                "https://dummyjson.com/image/i/products/4/4.jpg",
+                "https://dummyjson.com/image/i/products/4/thumbnail.jpg"
+            ]
+        },
+        {
+            "id": 44,
+            "title": "Huawei P30",
+            "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+            "price": 499,
+            "discountPercentage": 10.58,
+            "rating": 4.09,
+            "stock": 32,
+            "brand": "Huawei",
+            "category": "smartphones",
+            "thumbnail": "https://image.ceneostatic.pl/data/products/77762072/i-huawei-p30-6-128gb-opal.jpg",
+            "images": [
+                "https://dummyjson.com/image/i/products/5/1.jpg",
+                "https://dummyjson.com/image/i/products/5/2.jpg",
+                "https://dummyjson.com/image/i/products/5/3.jpg"
+            ]
+        },
+        {
+            "id": 45,
+            "title": "MacBook Pro",
+            "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+            "price": 1749,
+            "discountPercentage": 11.02,
+            "rating": 4.57,
+            "stock": 83,
+            "brand": "Apple",
+            "category": "laptops",
+            "thumbnail": "",
+            "images": [
+                "https://dummyjson.com/image/i/products/6/1.png",
+                "https://dummyjson.com/image/i/products/6/2.jpg",
+                "https://dummyjson.com/image/i/products/6/3.png",
+                "https://dummyjson.com/image/i/products/6/4.jpg"
+            ]
+        },
+        {
+            "id": 46,
+            "title": "Samsung Galaxy Book",
+            "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+            "price": 1499,
+            "discountPercentage": 4.15,
+            "rating": 4.25,
+            "stock": 50,
+            "brand": "Samsung",
+            "category": "laptops",
+            "thumbnail": "",
+            "images": [
+                "https://dummyjson.com/image/i/products/7/1.jpg",
+                "https://dummyjson.com/image/i/products/7/2.jpg",
+                "https://dummyjson.com/image/i/products/7/3.jpg",
+                "https://dummyjson.com/image/i/products/7/thumbnail.jpg"
+            ]
+        },
+        {
+            "id": 47,
+            "title": "Microsoft Surface Laptop 4",
+            "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+            "price": 1499,
+            "discountPercentage": 10.23,
+            "rating": 4.43,
+            "stock": 68,
+            "brand": "Microsoft Surface",
+            "category": "laptops",
+            "thumbnail": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWBrzy?ver=85d4",
+            "images": [
+                "https://dummyjson.com/image/i/products/8/1.jpg",
+                "https://dummyjson.com/image/i/products/8/2.jpg",
+                "https://dummyjson.com/image/i/products/8/3.jpg",
+                "https://dummyjson.com/image/i/products/8/4.jpg",
+                "https://dummyjson.com/image/i/products/8/thumbnail.jpg"
+            ]
+        },
+        {
+            "id": 48,
+            "title": "Infinix INBOOK",
+            "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
+            "price": 1099,
+            "discountPercentage": 11.83,
+            "rating": 4.54,
+            "stock": 96,
+            "brand": "Infinix",
+            "category": "laptops",
+            "thumbnail": "",
+            "images": [
+                "https://dummyjson.com/image/i/products/9/1.jpg",
+                "https://dummyjson.com/image/i/products/9/2.png",
+                "https://dummyjson.com/image/i/products/9/3.png",
+                "https://dummyjson.com/image/i/products/9/4.jpg",
+                "https://dummyjson.com/image/i/products/9/thumbnail.jpg"
+            ]
+        },
+        {
+            "id": 49,
+            "title": "HP Pavilion 15-DK1056WM",
+            "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+            "price": 1099,
+            "discountPercentage": 6.18,
+            "rating": 4.43,
+            "stock": 89,
+            "brand": "HP Pavilion",
+            "category": "laptops",
+            "thumbnail": "",
+            "images": [
+                "https://dummyjson.com/image/i/products/10/1.jpg",
+                "https://dummyjson.com/image/i/products/10/2.jpg",
+                "https://dummyjson.com/image/i/products/10/3.jpg",
+                "https://dummyjson.com/image/i/products/10/thumbnail.jpeg"
+            ]
+        },
+        {
+            "id": 50,
+            "title": "MacBook Pro 13",
+            "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+            "price": 1200,
+            "discountPercentage": 4.18,
+            "rating": 4.63,
+            "stock": 12,
+            "brand": "Apple",
+            "category": "laptops",
+            "thumbnail": "./images/product1.png",
+            "images": [
+                "https://acom.pl/media/catalog/product/cache/0f7431f5367b37c067ffd8dcd36cc722/a/p/apple-macbook-pro-13-3-cala-m2-8-core-cpu-10-core-gpu-8gb-ram-256gb-ssd-klawiatura-us-srebrny-silver-23987_2.jpg",
+                "https://www.tradeinn.com/f/13787/137870850_4/apple-macbook-pro-13-m1-8gb-256gb-ssd-laptop.jpg",
+                "https://www.tradeinn.com/f/13787/137870849_2/apple-macbook-pro-13-m1-8gb-256gb-ssd-laptop.jpg",
+                "https://ispot.pl/img/imagecache/85001-86000/680x523/product-media/85001-86000/Apple-MacBook-Pro-13-chip-M2-8-core-CPU-10-core-GPU-RAM-16GB-512GB-SSD-Silver-25821-680x523-nobckgr.webp"
+            ]
+        },
+        {
+            "id": 51,
+            "title": "Smart Galaxy Watch 3",
+            "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+            "price": 12200,
+            "discountPercentage": 5.18,
+            "rating": 4.53,
+            "stock": 14,
+            "brand": "Galaxy",
+            "category": "watches",
+            "thumbnail": "./images/product2.png",
+            "images": [
+                "https://fs.siteor.com/gsmonline/files/testy/000959_samsung_galaxy_watch_3/003_samsung_galaxy_watch_3.jpg",
+                "https://image.ceneostatic.pl/data/products/95916892/i-samsung-galaxy-watch-3-sm-r840-45mm-srebrny.jpg",
+                "https://www.telepolis.pl/images/2020/06/Samsung-Galaxy-Watch-3-45mm-1200.jpg",
+                "https://image.ceneostatic.pl/data/products/95918954/e9a63ea2-e069-404d-8d36-f2868661421a_i-samsung-galaxy-watch-3-sm-r840-45mm-czarny.jpg"
+            ]
+        },
+        {
+            "id": 52,
+            "title": "MacBook Air M1",
+            "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+            "price": 1009,
+            "discountPercentage": 5.18,
+            "rating": 4.63,
+            "stock": 13,
+            "brand": "Apple",
+            "category": "laptops",
+            "thumbnail": "./images/product3.png",
+            "images": [
+                "https://ispot.pl/img/imagecache/18001-19000/680x680/product-media/18001-19000/Apple-Macbook-Air-13-8-rdzeniowy-procesor-Apple-M1-z-7-rdzeniowa-grafika-dysk-256-GB-SSD-Zloty-26874-680x680-nobckgr.webp",
+                "https://image.ceneostatic.pl/data/products/99105003/i-apple-macbook-air-13-3-m1-8gb-256gb-macos-mgn63zea.jpg",
+                "https://ecsmedia.pl/c/laptop-apple-macbook-air-13-apple-m1-13-3-ram-16-gb-ssd-256-gb-space-grey-mac-os-big-sur-b-iext85872499.jpg",
+                "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-space-gray-config-201810?wid=1078&hei=624&fmt=jpeg&qlt=90&.v=1664499515473"
+            ]
+        },
+        {
+            "id": 53,
             "title": "iPad",
             "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
             "price": 610,

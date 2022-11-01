@@ -50,40 +50,12 @@
     color: #000000; }
 
 #loader {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(302.5px, 1fr));
-  grid-gap: 10px;
-  width: 92%;
-  margin: 0 auto;
-  justify-content: center; }
-
-.skeleton-card {
   width: 100%;
-  height: 100%;
-  height: 35vh;
-  border-radius: 3px;
-  transition: all 200ms ease-in-out;
-  position: relative;
-  background-color: #eaeaea; }
+  text-align: center; }
 
-.skeleton-card::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  transform: translateX(-100%);
-  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0));
-  animation: load 1s infinite; }
-
-@keyframes load {
-  100% {
-    transform: translateX(100%); } }
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .skeleton-card::after {
-    animation: none; } }
+#loader {
+  width: 100%;
+  text-align: center; }
 
 body {
   margin: 0;
