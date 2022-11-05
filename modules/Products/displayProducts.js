@@ -7,6 +7,7 @@ export default function displayProducts(
     byStock = false,
     onlyFour = false,
 
+    // hardcoded, cause it's usually never changes on eCommerce sites(if I am not mistaken)
     smartphones = false,
     watches = false,
     tablet = false,
@@ -27,7 +28,7 @@ export default function displayProducts(
 
     dest.insertAdjacentHTML(
       'beforeend',
-      `<div class="product">
+      `<a href="/${product.id}" class="product">
                 <div class="product__image"><img style="width: 100%; height: 100%; object-fit: contain;" src="${
                   product.thumbnail
                 }" alt=""></div>
@@ -36,7 +37,7 @@ export default function displayProducts(
                   description.slice(0, 80) + '...'
                 }</div>
                 <div class="product__price">$ ${product.price} USD</div>
-            </div>`
+            </a>`
     );
   }
 

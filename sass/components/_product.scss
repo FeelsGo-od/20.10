@@ -1,0 +1,32 @@
+.product-details  {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 20px 0;
+
+    &.product, &:hover {
+        background: #fbfbfb;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.077);
+        cursor: default;
+    }
+
+    & .product__image {
+        width: 500px;
+
+        & img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}
+
+.details {
+    margin-top: 20px;
+
+    & .product__price {
+        font-size: 34px;
+    }
+
+    & .buttons {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,11 @@
+.cart {
+    & .product {
+        &__image {
+            width: 200px;
+        }
+    }
+
+    &__delete {
+        margin-bottom: 20px;
+    }
+}

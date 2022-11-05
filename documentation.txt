@@ -1,0 +1,13 @@
+css = folder with all styles compiled from sass
+
+data = products json data
+
+modules = js modules
+
+sass < components = styles of different site components(modules)
+
+templates = all layout files like html or pug which are rendered on page
+
+express.js = file with general express routes
+
+main.js = file where all functions from "modules" folder are used and added to the layouts

@@ -1,9 +1,26 @@
 // to start watching changes --> $ npm run compile-sass
 
+@font-face {
+    font-family: 'Readex Pro';
+    src: url('../../fonts/Readex-Pro-Font/ReadexPro-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../fonts/Inter/Inter-Regular.otf');
+}
+
 @import './components/products';
+@import './components/product';
+@import './components/cart';
+@import './components/search';
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
 }
