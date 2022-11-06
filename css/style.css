@@ -85,6 +85,50 @@
 .search {
   margin: 20px 0 40px 80px; }
 
+.subscription__block {
+  background: #DCE5E2;
+  padding: 47px 180px 43.5px 180px;
+  text-align: center; }
+
+.subscription__title {
+  font-family: 'Readex Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  color: #000000; }
+
+.subscription__description {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-top: 9px; }
+
+.subscription__image {
+  margin-top: 14.5px; }
+
+.subscription__form {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%; }
+
+.subscription__input {
+  background: #DCE5E2;
+  border: 1px solid #000000;
+  border-radius: 54px 0px 0px 54px;
+  padding: 16px 0 17px 32px; }
+
+.subscription__btn {
+  background: #000000;
+  border: none;
+  border-radius: 0px 200px 200px 0px;
+  color: #fff;
+  padding: 16px 32px 17px; }
+
 body {
   margin: 0;
   padding: 0;
