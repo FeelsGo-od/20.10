@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const router = express.Router();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.static(__dirname));
 
@@ -24,6 +24,6 @@ app.set('views', path.join(__dirname, 'templates'));
 app.set('view engine', 'pug');
 
 app.use('/', router);
-app.listen(process.env.port || 3000, function () {
+app.listen(port, function () {
   console.log(`Example app listening on port ${port}!`);
 });
