@@ -9,6 +9,7 @@ const app = express();
 const router = express.Router();
 const port = process.env.PORT || 3000;
 
+// routes
 app.use(express.static(__dirname));
 
 router.get('/', function (req, res) {
