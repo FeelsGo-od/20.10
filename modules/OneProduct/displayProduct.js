@@ -7,6 +7,10 @@ export default function displayProduct(destImage, destDetails, id) {
     products = productsData.products;
 
     let found = products.find((product) => product.id == id);
+    if (!found) {
+      window.location.href = '/404';
+      return;
+    }
 
     document.title = found.title;
 

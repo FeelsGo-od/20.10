@@ -77,6 +77,10 @@ router.get('/:id', function (req, res) {
 app.set('views', path.join(__dirname, 'templates'));
 app.set('view engine', 'pug');
 
+app.use('/404', function (req, res) {
+  res.status(400).sendFile(path.join(__dirname + '/templates/404.html'));
+});
+
 app.use('/', router);
 app.listen(port, function () {
   console.log(`Example app listening on port ${port}!`);
