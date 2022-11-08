@@ -6,8 +6,14 @@ modules = js modules
 
 sass < components = styles of different site components(modules)
 
+sass < layout = styles of elements like header, footer, sidebar, forms, grid (!)which are on every page...
+
+sass < pages = styles of specifically different pages
+
 templates = all layout files like html or pug which are rendered on page
 
-express.js = file with general express routes
+.env = file with anonymous, hidden variables(e.g passwords, some personal data not for public..)
+
+express.js = file with general express routes and email_subscription
 
 main.js = file where all functions from "modules" folder are used and added to the layouts
