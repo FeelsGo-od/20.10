@@ -1,6 +1,7 @@
 import express from 'express';
-
-import multer from 'multer';
+import nodemailer from 'nodemailer';
+import dotenv from 'dotenv';
+dotenv.config();
 
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -31,6 +32,33 @@ router.post('/send_email', function (req, res) {
   try {
     const recipient = req.body.email;
     console.log('recipient:', recipient);
+
+    let transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        type: 'OAuth2',
+        user: process.env.MAIL_USERNAME,
+        pass: process.env.MAIL_PASSWORD,
+        clientId: process.env.OAUTH_CLIENTID,
+        clientSecret: process.env.OAUTH_CLIENT_SECRET,
+        refreshToken: process.env.OAUTH_REFRESH_TOKEN,
+      },
+    });
+
+    let mailOptions = {
+      from: 'andrewdevvv@gmail.com',
+      to: recipient,
+      subject: 'NewsLetter from California',
+      text: 'Hi there :)',
+    };
+
+    transporter.sendMail(mailOptions, function (err, data) {
+      if (err) {
+        console.log('Error ' + err);
+      } else {
+        console.log('Email sent successfully');
+      }
+    });
   } catch (err) {
     console.log(err);
     return res.send('Error uploading file');
