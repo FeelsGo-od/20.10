@@ -8,6 +8,7 @@ export default function displayProduct(destImage, destDetails, id) {
 
     let found = products.find((product) => product.id == id);
     if (!found) {
+      window.stop();
       window.location.href = '/404';
       return;
     }

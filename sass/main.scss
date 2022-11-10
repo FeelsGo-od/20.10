@@ -10,13 +10,18 @@
     src: url('../../fonts/Inter/Inter-Regular.otf');
 }
 
+// components sass
 @import './components/products';
 @import './components/product';
 @import './components/cart';
 @import './components/search';
 @import './components/subscription';
+@import './components/slider';
 
-body {
+// layout sass
+@import './layout/header';
+
+body, * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,4 +29,8 @@ body {
 
 button {
     cursor: pointer;
+}
+
+.wrapper {
+    width: 100%;
 }

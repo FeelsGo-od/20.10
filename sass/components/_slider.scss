@@ -1,0 +1,82 @@
+// <div class="slider">
+//     <div class="slider__blocks"></div>
+//     <div class="slider__options"></div>
+//     <div class="slider__buttons"></div>
+// </div>
+
+.slider {
+    overflow-x: hidden;
+    position: relative;
+
+    &__blocks {
+        display: grid;
+        width: auto;
+        position: relative;
+        transition: all 0.5s ease;
+        left: 0;
+    }
+
+    &__block {
+        padding: 145px 56px 127px 93px;
+        max-width: 100%;
+    }
+
+    &__title {
+        font-family: 'Readex Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 70px;
+    }
+
+    &__description {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        margin: 19px 0 30px;
+    }
+
+    &__options {
+        position: absolute;
+        z-index: 99;
+        bottom: 0;
+        display: flex;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        width: 20%;
+    }
+
+    &__option {
+        position: relative;
+        margin-left: 12px;
+        margin: 0 auto;
+    }
+
+    &__buttons {
+        z-index: 98;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto 0;
+        top: 0;
+    }
+
+    &__btn {
+        padding: 20px;
+    }
+
+    &-prevSlide {
+        left: 0;
+    }
+
+    &-nextSlide {
+        right: 0;
+    }
+}

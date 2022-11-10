@@ -1,3 +1,15 @@
+// <div class="subscription">
+//     <div class="subscription__block">
+//         <div class="subscription__title">Never miss a thing</div>
+//         <div class="subscription__description">Sign up for texts to be notified about our best offers on the perfect gifts.</div>
+//         <img src="../images/sub-img.png" class="subscription__image">
+//         <form class="subscription__form" action="/send_email" method="POST">
+//             <input class="subscription__input" type="text" placeholder="Your email" enctype="multipart/form-data" name="email" required>
+//             <button class="subscription__btn" type="submit">Sign up</button>
+//         </form>
+//     </div>
+// </div>
+
 .subscription {
     &__block {
         background: #DCE5E2;

@@ -1,5 +1,6 @@
 import express from 'express';
 import nodemailer from 'nodemailer';
+let recipients = []; // change it for db
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -31,6 +32,7 @@ router.get('/', function (req, res) {
 router.post('/send_email', function (req, res) {
   try {
     const recipient = req.body.email;
+    recipients.push(recipient); // change it for db
     console.log('recipient:', recipient);
 
     let transporter = nodemailer.createTransport({

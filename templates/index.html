@@ -5,32 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>California</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <div class="subscription">
-        <div class="subscription__block">
-            <div class="subscription__title">Never miss a thing</div>
-            <div class="subscription__description">Sign up for texts to be notified about our best offers on the perfect gifts.</div>
-            <img src="../images/sub-img.png" class="subscription__image">
-            <form class="subscription__form" action="/send_email" method="POST">
-                <input class="subscription__input" type="text" placeholder="Your email" enctype="multipart/form-data" name="email" required>
-                <button class="subscription__btn" type="submit">Sign up</button>
-            </form>
-        </div>
+    <div class="wrapper">
+        <header class="header">
+            <img class="header__logo" src="../images/logo.png" alt="california logo">
+            <nav class="header__nav">
+                <ul class="header__links">
+                    <li class="header__link"><a href="">all products</a></li>
+                    <li class="header__link header__dropdown">
+                        <div class="header-open_dropdown">
+                            <a href="">Solutions</a>
+                            <button class="header__dropdown-btn">
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_12)">
+                                        <path d="M11 1L6 6L1 1" stroke="#070847" stroke-width="1.5" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_12">
+                                            <rect width="12" height="8" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="header__dropdown-block">
+                            <ul class="header__dropdown_menu">
+                                <li class="header__link"><a href="">Some other</a></li>
+                                <li class="header__link"><a href="">Links of page</a></li>
+                                <li class="header__link"><a href="">Opened on</a></li>
+                                <li class="header__link"><a href="">btn click</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__link"><a href="">ABOUT</a></li>
+                    <li class="header__link"><a href="">Support</a></li>
+                </ul>
+            </nav>
+            <div class="header__buttons">
+                <button class="header__button header__searchBtn toggle-input">
+                    <input type="text">
+                    <img class="toggle-input" src="../images/search.svg" alt="">
+                </button>
+                <img src="../images/cart.svg" alt="">
+            </div>
+        </header>
     </div>
-
-    <!-- <div class="search">
-        <input class="search__input" type="text">
-        <button>search</button>
-        <div class="search__results"></div>
-    </div>
-
-    <div class="products" id="products"></div>
-    <div id="loader"><img src="../images/loader.gif" alt="loader"></div> -->
 
     <script type="module" src="../main.js"></script>
 </body>

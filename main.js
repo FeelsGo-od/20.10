@@ -4,6 +4,8 @@ import addToCart from './modules/Cart/addToCart.js';
 import displayCart from './modules/Cart/displayCart.js';
 import search from './modules/Search/search.js';
 import deleteFromCart from './modules/Cart/deleteFromCart.js';
+import addSlider from './modules/Slider/slider.js';
+import animOpen from './modules/Search/animOpen.js';
 
 function handleProducts() {
   let productsElem = document.querySelector('#products');
@@ -71,6 +73,42 @@ function handleSearching() {
 
     search(searchResults, searchInput);
   }
+
+  let toggleBtns = document.querySelectorAll('.toggle-input');
+
+  for (let toggleBtn of toggleBtns) {
+    toggleBtn.addEventListener('click', function () {
+      animOpen(toggleBtn);
+    });
+  }
 }
 
 handleSearching();
+
+function handleSlider() {
+  let slides = [
+    {
+      bgColor: '#DCE5E2',
+      title: 'The new phones are here take a look.',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis.',
+    },
+    {
+      bgColor: 'blue',
+      title: 'The new phones are here take a look. 2',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis. 2',
+    },
+    {
+      bgColor: 'grey',
+      title: 'The new phones are here take a look. 3',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis. 3',
+    },
+  ];
+  let dest = document.querySelector('.slider');
+  if (!dest) return;
+  addSlider(dest, slides);
+}
+
+handleSlider();

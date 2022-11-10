@@ -129,10 +129,131 @@
   color: #fff;
   padding: 16px 32px 17px; }
 
-body {
+.slider {
+  overflow-x: hidden;
+  position: relative; }
+  .slider__blocks {
+    display: grid;
+    width: auto;
+    position: relative;
+    transition: all 0.5s ease;
+    left: 0; }
+  .slider__block {
+    padding: 145px 56px 127px 93px;
+    max-width: 100%; }
+  .slider__title {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 70px; }
+  .slider__description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 19px 0 30px; }
+  .slider__options {
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+    display: flex;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 20%; }
+  .slider__option {
+    position: relative;
+    margin-left: 12px;
+    margin: 0 auto; }
+  .slider__buttons {
+    z-index: 98;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 0;
+    top: 0; }
+  .slider__btn {
+    padding: 20px; }
+  .slider-prevSlide {
+    left: 0; }
+  .slider-nextSlide {
+    right: 0; }
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 26px 0;
+  margin: 0 auto;
+  width: 90%;
+  justify-content: space-between; }
+  .header__nav {
+    margin: 0 285px; }
+  .header__links, .header__dropdown_menu {
+    display: flex;
+    list-style: none; }
+  .header__link {
+    margin-left: 38px; }
+    .header__link:first-child {
+      margin-left: 0; }
+  .header__link a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000; }
+  .header__dropdown_menu {
+    position: absolute; }
+  .header-open_dropdown {
+    display: flex; }
+  .header__dropdown-btn {
+    border: none;
+    background: none;
+    margin-left: 3px; }
+  .header__buttons {
+    margin-right: 28px;
+    display: flex;
+    position: relative; }
+  .header__button {
+    margin-left: 22px;
+    background: none;
+    border: none;
+    cursor: pointer; }
+  .header__searchBtn {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    right: 31px;
+    display: flex;
+    border: none; }
+    .header__searchBtn input {
+      opacity: 0;
+      height: 100%;
+      width: 85%;
+      transition: all 0.3s ease;
+      position: absolute;
+      right: 24px;
+      border: none; }
+    .header__searchBtn img {
+      margin-left: 0px;
+      position: absolute;
+      right: 0; }
+
+body, * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 button {
   cursor: pointer; }
+
+.wrapper {
+  width: 100%; }
