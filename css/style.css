@@ -235,7 +235,7 @@
     display: flex;
     list-style: none; }
   .header__link {
-    margin-left: 38px; }
+    margin-left: 34px; }
     .header__link:first-child {
       margin-left: 0; }
   .header__link a {
@@ -247,8 +247,15 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #000000; }
+  .header__dropdown {
+    position: relative; }
   .header__dropdown_menu {
-    position: absolute; }
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    row-gap: 34px;
+    text-align: center; }
+    .header__dropdown_menu .header__link {
+      margin-left: 0; }
   .header-open_dropdown {
     display: flex; }
   .header__dropdown-btn {
@@ -256,7 +263,15 @@
     background: none;
     margin-left: 3px; }
   .header__dropdown-block {
-    display: none; }
+    opacity: 0;
+    transition: opacity 0.34s ease-in-out;
+    -webkit-transition: opacity 0.34s ease-in-out;
+    -moz-transition: opacity 0.34s ease-in-out;
+    background: #fff;
+    padding: 60px 53px;
+    position: absolute;
+    width: 667px;
+    z-index: 99; }
   .header__buttons {
     margin-right: 28px;
     display: flex;
@@ -267,14 +282,17 @@
     border: none;
     cursor: pointer; }
   .header__searchBtn {
-    width: 0;
+    width: 40px;
     height: 100%;
     position: absolute;
-    right: 31px;
+    right: 26px;
     display: flex;
     border: none;
-    border-radius: 0.6px;
-    margin-right: 15px; }
+    border-radius: 5px;
+    margin-right: 15px;
+    transition: width 0.24s ease-in;
+    -webkit-transition: width 0.24s ease-in;
+    -moz-transition: width 0.24s ease-in; }
     .header__searchBtn input {
       opacity: 0;
       height: 100%;
@@ -284,18 +302,20 @@
       right: 24px;
       border: none;
       border-right: none !important;
-      padding-left: 2px;
       font-size: 15.4px;
-      color: #454343; }
+      color: #454343;
+      border-radius: 5px;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0; }
       .header__searchBtn input[type=text]:focus {
         outline: none;
-        border: 1px solid grey;
-        border-radius: 0; }
+        border: none; }
     .header__searchBtn img {
       margin-left: 0px;
       position: absolute;
       right: 0;
-      transition: transform 0.4s ease; }
+      transition: transform 0.4s ease;
+      padding: 0 6px; }
 
 body, * {
   margin: 0;

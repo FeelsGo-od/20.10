@@ -75,13 +75,8 @@ function handleSearching() {
     search(searchResults, searchInput);
   }
 
-  let toggleBtns = document.querySelectorAll('.toggle-input');
-
-  for (let toggleBtn of toggleBtns) {
-    toggleBtn.addEventListener('click', function () {
-      animOpen(toggleBtn);
-    });
-  }
+  let toggleBtn = document.querySelector('.toggle-input');
+  animOpen(toggleBtn);
 }
 
 handleSearching();
