@@ -11,9 +11,14 @@ export default function addSlider(dest, slides) {
       'beforeend',
       `
         <div class="slider__block" style="background: ${slide.bgColor}">
-            <div class="slider__title">${slide.title}</div>
-            <div class="slider__description">${slide.description}</div>
-            <div class="slider__btn"></div>
+            <div class="slider__left">
+                <div class="slider__title">${slide.title}</div>
+                <div class="slider__description">${slide.description}</div>
+                <button class="slider__btn">Explore</button>
+            </div>
+            <div class="slider__right">
+                <img src="../../images/slider-img.png" alt="slider image">
+            </div>
         </div>
       `
     );
@@ -21,7 +26,7 @@ export default function addSlider(dest, slides) {
 
   //auto-slide
   function handleMovement() {
-    setTimeout(() => {
+    let timeout = setTimeout(() => {
       let currentSlide = position.toString()[0];
 
       if (currentSlide < slides.length - 1) {
@@ -32,10 +37,32 @@ export default function addSlider(dest, slides) {
       sliderBlocks.style.left = `-${position}%`;
 
       handleMovement();
-    }, 8500);
+    }, 9500);
+
+    document.addEventListener('click', (e) => {
+      console.log(e.target.classList.contains('slider__arrow'));
+      if (
+        e.target.classList.contains('slider__arrow') ||
+        e.target.classList.contains('slider__option')
+      ) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => {
+          let currentSlide = position.toString()[0];
+
+          if (currentSlide < slides.length - 1) {
+            position += 100;
+          } else {
+            position = 0;
+          }
+          sliderBlocks.style.left = `-${position}%`;
+
+          handleMovement();
+        }, 9500);
+      }
+    });
   }
 
-  handleMovement();
+  // handleMovement();
 
   //arrows left/right
   function handleSwitchers() {
@@ -47,8 +74,10 @@ export default function addSlider(dest, slides) {
     movePrev.className += 'slider__btn slider-prevSlide';
     moveNext.className += 'slider__btn slider-nextSlide';
 
-    movePrev.innerHTML = '<';
-    moveNext.innerHTML = '>';
+    movePrev.innerHTML =
+      '<img class="slider__arrow" src="../../images/arrow-left.svg" alt="previous slide">';
+    moveNext.innerHTML =
+      '<img class="slider__arrow" src="../../images/arrow-right.svg" alt="next slide">';
 
     sliderBtns.appendChild(movePrev);
     sliderBtns.appendChild(moveNext);
@@ -87,12 +116,11 @@ export default function addSlider(dest, slides) {
       sliderOptions.insertAdjacentHTML(
         'afterbegin',
         `
-            <div class="slider__option slider-${i}">${i}</div>
+            <img class="slider__option slider-${i}" src="../../images/slider-option.png" alt="slide ${i}"></img>
         `
       );
     }
   }
-
   addOptions();
 
   function handleOptions() {
