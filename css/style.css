@@ -271,7 +271,8 @@
     padding: 60px 53px;
     position: absolute;
     width: 667px;
-    z-index: 99; }
+    z-index: 99;
+    pointer-events: none; }
   .header__buttons {
     margin-right: 28px;
     display: flex;

@@ -70,6 +70,7 @@
         position: absolute;
         width: 667px;
         z-index: 99;
+        pointer-events: none;
     }
 
     &__buttons {
