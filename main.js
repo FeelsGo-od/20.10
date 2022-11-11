@@ -6,6 +6,7 @@ import search from './modules/Search/search.js';
 import deleteFromCart from './modules/Cart/deleteFromCart.js';
 import addSlider from './modules/Slider/slider.js';
 import animOpen from './modules/Search/animOpen.js';
+import hoverLink from './modules/Dropdown/hoverLink.js';
 
 function handleProducts() {
   let productsElem = document.querySelector('#products');
@@ -112,3 +113,13 @@ function handleSlider() {
 }
 
 handleSlider();
+
+function handleDropdown() {
+  let dropdownBtns = document.querySelectorAll('.header__dropdown');
+
+  for (let dropdownBtn of dropdownBtns) {
+    hoverLink(dropdownBtn);
+  }
+}
+
+handleDropdown();
