@@ -7,6 +7,7 @@ import deleteFromCart from './modules/Cart/deleteFromCart.js';
 import addSlider from './modules/Slider/slider.js';
 import animOpen from './modules/Search/animOpen.js';
 import hoverLink from './modules/Dropdown/hoverLink.js';
+import hambMenu from './modules/Dropdown/hambMenu.js';
 
 function handleProducts() {
   let productsElem = document.querySelector('#products');
@@ -118,3 +119,11 @@ function handleDropdown() {
 }
 
 handleDropdown();
+
+function handleHamburger() {
+  let btn = document.querySelector('.header__mobile');
+
+  hambMenu(btn);
+}
+
+handleHamburger();

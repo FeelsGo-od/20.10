@@ -26,6 +26,10 @@
         display: flex;
         overflow: hidden;
 
+        @media (min-width: 1441px) {
+            justify-content: center;
+        }
+
         & button {
             border: 1px solid #000000;
             border-radius: 200px;
