@@ -136,6 +136,10 @@
   width: 90%;
   margin-top: 29px;
   border-radius: 32px; }
+  @media (max-width: 769px) {
+    .slider {
+      max-height: 842px;
+      overflow-y: hidden; } }
   .slider__blocks {
     display: grid;
     width: auto;
@@ -150,6 +154,15 @@
     @media (min-width: 1441px) {
       .slider__block {
         justify-content: center; } }
+    @media (max-width: 1023px) {
+      .slider__block {
+        flex-direction: column;
+        align-items: center;
+        justify-content: end; } }
+    @media (max-width: 769px) {
+      .slider__block {
+        padding: 0px 31px 0px 31px;
+        justify-content: start; } }
     .slider__block button {
       border: 1px solid #000000;
       border-radius: 200px;
@@ -163,6 +176,19 @@
       padding: 14px 53px;
       position: relative;
       z-index: 8; }
+      @media (max-width: 1253px) {
+        .slider__block button {
+          padding: 12px 57px; } }
+      @media (max-width: 1023px) {
+        .slider__block button {
+          padding: 16px 68px;
+          margin: 0 auto;
+          display: flex;
+          margin-top: 41px; } }
+      @media (max-width: 769px) {
+        .slider__block button {
+          margin-top: 55px;
+          margin-bottom: 10px; } }
   .slider__title {
     font-family: 'Readex Pro';
     font-style: normal;
@@ -170,6 +196,18 @@
     font-size: 58px;
     line-height: 70px;
     width: 94%; }
+    @media (max-width: 1253px) {
+      .slider__title {
+        font-size: 45px;
+        line-height: 55px; } }
+    @media (max-width: 1023px) {
+      .slider__title {
+        font-size: 54px;
+        line-height: 70px; } }
+    @media (max-width: 769px) {
+      .slider__title {
+        font-size: 36px;
+        line-height: 46px; } }
   .slider__description {
     font-family: 'Inter';
     font-style: normal;
@@ -178,12 +216,40 @@
     line-height: 19px;
     margin: 19px 0 30px;
     width: 79%; }
+    @media (max-width: 1023px) {
+      .slider__description {
+        font-size: 18px;
+        line-height: 37px;
+        width: 100%;
+        margin: 30px 0 30px; } }
+    @media (max-width: 769px) {
+      .slider__description {
+        font-size: 16px;
+        line-height: 34px; } }
   .slider__left {
     padding-top: 145px;
     width: 61%; }
+    @media (max-width: 1253px) {
+      .slider__left {
+        padding-top: 115px; } }
+    @media (max-width: 1023px) {
+      .slider__left {
+        padding-top: 56px;
+        padding-bottom: 15px;
+        width: 84%; } }
+    @media (max-width: 769px) {
+      .slider__left {
+        width: 74%;
+        padding-bottom: 0; } }
   .slider__right {
     position: relative;
     top: 4px; }
+    @media (max-width: 769px) {
+      .slider__right img {
+        width: 45%;
+        margin: 0 auto;
+        text-align: center;
+        display: flex; } }
   .slider__options {
     position: absolute;
     z-index: 9;
@@ -195,6 +261,12 @@
     text-align: center;
     width: 51%;
     padding-bottom: 34px; }
+    @media (max-width: 1023px) {
+      .slider__options {
+        width: 100%; } }
+    @media (max-width: 769px) {
+      .slider__options {
+        display: block; } }
   .slider__option {
     position: relative;
     margin-left: 12px;
@@ -204,8 +276,19 @@
     margin-left: 27px;
     cursor: pointer;
     border: 4px solid transparent; }
+    @media (max-width: 1023px) {
+      .slider__option {
+        -webkit-filter: invert(100%);
+        /* Safari/Chrome */
+        filter: invert(100%); } }
+    @media (max-width: 769px) {
+      .slider__option {
+        width: 17%; } }
   .slider__option:first-child {
     margin-left: 0; }
+    @media (max-width: 769px) {
+      .slider__option:first-child {
+        margin-left: auto; } }
   .slider__buttons {
     z-index: 7;
     position: absolute;
@@ -256,15 +339,13 @@
     @media (max-width: 768px) {
       .header__mobile {
         display: flex;
-        align-items: center; } }
+        align-items: center;
+        font-size: 20px; } }
     @media (min-width: 481px) and (max-width: 768px) {
       .header__mobile {
         left: -1px; } }
     .header__mobile .mobile-btn {
-      width: 23%; }
-      @media (min-width: 500px) {
-        .header__mobile .mobile-btn {
-          width: 15%; } }
+      width: 26%; }
     .header__mobile span {
       margin-left: 5px; }
   @media (min-width: 769px) and (max-width: 950px) {
@@ -414,7 +495,7 @@
     @media (max-width: 480px) {
       .header__buttons {
         margin-right: 0;
-        left: -5px; } }
+        left: -8px; } }
   .header__button {
     margin-left: 22px;
     background: none;

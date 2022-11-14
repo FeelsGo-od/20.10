@@ -37,6 +37,7 @@
         @media (max-width: 768px) {
             display: flex;
             align-items: center;
+            font-size: 20px;
         }
 
         @media (min-width: 481px) and (max-width: 768px) {
@@ -44,11 +45,7 @@
         }
 
         & .mobile-btn {
-            width: 23%;
-
-            @media (min-width: 500px) {
-                width: 15%;
-            }
+            width: 26%;
         }
 
         & span {
@@ -251,7 +248,7 @@
 
         @media (max-width: 480px) {
             margin-right: 0;
-            left: -5px;
+            left: -8px;
         }
     }
 
