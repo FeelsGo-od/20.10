@@ -8,11 +8,7 @@
     width: 90%;
     justify-content: space-between;
 
-    @media (min-width: 481px) and (max-width: 768px) {
-        flex-direction: column;
-    }
-
-    @media (max-width: 480px) {
+    @media (max-width: 1100px) {
         flex-direction: column;
     }
 
@@ -81,8 +77,8 @@
             margin: 0 135px 0 58px;
         }
 
-        @media (min-width: 769px) and (max-width: 950px) {
-            margin: 0 61px 0 18px;
+        @media (min-width: 769px) and (max-width: 1100px) {
+            margin: 28px 61px 26px 18px;
         }
 
         @media (min-width: 481px) and (max-width: 768px) {
@@ -107,6 +103,26 @@
             margin-bottom: 56px;
             width: 97%;
             border-bottom: 2px solid #e9e9e9;
+        }
+
+        @media (max-width: 471px) {
+            padding: 0px 60px 80px 60px;
+        }
+
+        @media (max-width: 420px) {
+            padding: 0px 60px 80px 43px;
+        }
+
+        @media (max-width: 377px) {
+            padding: 0px 60px 80px 27px;
+        }
+
+        @media (max-width: 345px) {
+            padding: 0px 60px 80px 12px;
+        }
+
+        @media (max-width: 319px) {
+            padding: 0px 60px 80px 0;
         }
     }
 
@@ -166,10 +182,6 @@
         }
     }
 
-    &__dropdown {
-        position: relative;
-    }
-
     &__dropdown_menu {
         display: grid;
         grid-template-columns: repeat(4, 25%);
@@ -179,10 +191,20 @@
         @media (max-width: 768px) {
             padding: 23px 0;
             text-align: left;
+            grid-template-columns: repeat(3, 25%);
         }
 
         @media (max-width: 620px) {
             grid-template-columns: repeat(2, 25%);
+        }
+
+        @media (max-width: 471px) {
+            padding: 17px 0;
+            row-gap: 23px;
+        }
+
+        @media (max-width: 319px) {
+            grid-template-columns: repeat(2, 23%);
         }
 
         & .header__link {
@@ -196,6 +218,10 @@
         & .header__link a {
             @media (max-width: 768px) {
                 font-size: 15px;
+            }
+
+            @media (max-width: 471px) {
+                font-size: 12px;
             }
         }
     }
@@ -212,11 +238,12 @@
 
     &__dropdown-block {
         opacity: 0;
-        @include transition (opacity 0.34s ease-in-out);
+        @include transition (opacity 0.2s ease-in-out);
         background: #fff;
         padding: 60px 53px;
         position: absolute;
         width: 667px;
+        left: 0;
         z-index: 99;
         pointer-events: none;
 
@@ -240,6 +267,11 @@
             @media (min-width: 481px) and (max-width: 768px) {
                 transform: scale(1.2);
             }
+        }
+
+        @media (min-width: 769px) and (max-width: 1100px) {
+            margin-right: 0;
+            left: 11px;
         }
 
         @media (min-width: 481px) and (max-width: 768px) {
