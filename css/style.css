@@ -14,10 +14,9 @@
   color: #000;
   text-decoration: none;
   border-radius: 3px;
-  transition: all 200ms ease-in-out;
-  border-top: 2px solid transparent; }
+  transition: color 160ms ease-in-out; }
   .product:hover {
-    border-top: 2px solid #f4f4f4; }
+    color: #b0b0b0; }
   .product__image {
     width: 303px;
     height: 270px;
@@ -742,6 +741,11 @@
         width: 56%; } }
   .latest__big-size .latest__slogan {
     padding: 0 6px; }
+
+.best-products {
+  margin-top: 47px; }
+  .best-products__description {
+    margin: 9px 0 56px 0; }
 
 @font-face {
   font-family: 'Readex Pro';
