@@ -1,15 +1,5 @@
 // to start watching changes --> $ npm run compile-sass
 
-@font-face {
-    font-family: 'Readex Pro';
-    src: url('../../fonts/Readex-Pro-Font/ReadexPro-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('../../fonts/Inter/Inter-Regular.otf');
-}
-
 // components sass
 @import './components/products';
 @import './components/product';
@@ -23,6 +13,16 @@
 
 // pages sass
 @import './pages/home/latest';
+
+@font-face {
+    font-family: 'Readex Pro';
+    src: url('../../fonts/Readex-Pro-Font/ReadexPro-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../fonts/Inter/Inter-Regular.otf');
+}
 
 body, * {
     margin: 0;
@@ -46,7 +46,18 @@ button {
     font-size: 42px;
     line-height: 52px;
     text-align: center;
-    color: #000000;    
+    color: #000000;  
+    
+    @media (max-width: 769px) {
+        font-size: 32px;
+        line-height: unset;
+    }
+
+    @media (max-width: 392px) {
+        font-size: 28px;
+        text-align: left;
+        padding-left: 18px;
+    }
 }
 
 .description {
@@ -57,6 +68,29 @@ button {
     line-height: 19px;
     text-align: center;
     color: #000000;
-    padding: 0px 334px;
     letter-spacing: 0px;
+    padding: 0px 16%;
+
+    @media (max-width: 1483px) {
+        padding: 0px 16%;
+    }
+
+    @media (max-width: 1024px) {
+        margin-top: 20px;
+        padding: 0px 10%;
+    }
+
+    @media (max-width: 992px) {
+        margin-top: 20px;
+        padding: 0px 6%;
+        text-align: justify;
+    }
+
+    @media (max-width: 769px) {
+        margin: 21px 0 36px 0;
+    }
+
+    @media (max-width: 392px) {
+        text-align: left;
+    }
 }
