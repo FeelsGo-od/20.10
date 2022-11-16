@@ -109,7 +109,7 @@ export default function displayProducts(
 
         sortedByCat.map((product) => {
           if (onlyFour) count++;
-          if (count > 7) return false;
+          if (count > 4) return false;
 
           if (product.id < startRange + 1 || product.id > endRange) return;
 
@@ -142,6 +142,12 @@ export default function displayProducts(
 
         if (endOfPage) {
           addCards(currentPage + 1);
+        }
+
+        if (onlyFour) {
+          setTimeout(() => {
+            handleInfiniteScroll();
+          }, 100);
         }
 
         if (currentPage === pageCount) {

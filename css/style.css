@@ -5,22 +5,28 @@
   width: 92%;
   margin: 0 auto;
   justify-content: center; }
+  @media (max-width: 769px) {
+    .products {
+      width: 75%; } }
 
 .product {
   cursor: pointer;
   color: #000;
   text-decoration: none;
   border-radius: 3px;
-  transition: all 200ms ease-in-out; }
+  transition: all 200ms ease-in-out;
+  border-top: 2px solid transparent; }
   .product:hover {
-    background: #f7f7f7;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.077); }
+    border-top: 2px solid #f4f4f4; }
   .product__image {
     width: 303px;
     height: 270px;
     display: flex;
     align-items: center;
     justify-content: center; }
+    @media (max-width: 769px) {
+      .product__image {
+        margin: 0 auto; } }
   .product__title {
     font-family: 'Readex Pro';
     font-style: normal;
