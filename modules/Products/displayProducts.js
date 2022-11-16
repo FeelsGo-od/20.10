@@ -44,14 +44,14 @@ export default function displayProducts(
   fetching('../../data/products.json').then((productsData) => {
     products = productsData.products;
 
-    //pagination entries
+    //products pagination entries
     const loader = document.getElementById('loader');
     const productsIncrease = 15;
     const productsLimit = products.length;
     const pageCount = Math.ceil(productsLimit / productsIncrease);
     let currentPage = 1;
 
-    //add products of current page
+    //add products of current products page
     const addCards = (pageIndex) => {
       currentPage = pageIndex;
 
@@ -60,7 +60,7 @@ export default function displayProducts(
         currentPage == pageCount ? productsLimit : pageIndex * productsIncrease;
 
       if (!byRating && !byStock && !category) {
-        //show all proucts
+        //show all products
         let count = 0;
         products.map((product) => {
           if (onlyFour) count++;
@@ -93,7 +93,7 @@ export default function displayProducts(
 
         sortedProducts.map((product) => {
           if (onlyFour) count++;
-          if (count > 7) return false;
+          if (count > 4) return false;
 
           if (product.id < startRange + 1 || product.id > endRange) return;
 

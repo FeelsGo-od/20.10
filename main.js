@@ -11,7 +11,7 @@ import hambMenu from './modules/Dropdown/hambMenu.js';
 
 function handleProducts() {
   let productsElem = document.querySelector('#products');
-  if (!productsElem) return;
+  let mostSelled = document.querySelector('.most-selled__demo');
 
   //*   displayProducts(productsElem. {}); // display just all products
 
@@ -24,7 +24,9 @@ function handleProducts() {
   let tablet = 'tablet';
   let laptops = 'laptops';
 
-  displayProducts(productsElem, {}); // sorted products (by rating/stock) AND show only 4 products
+  displayProducts(mostSelled, { byStock, onlyFour });
+
+  // displayProducts(productsElem, { byRating, onlyFour }); // sorted products (by rating/stock) AND show only 4 products
 }
 
 handleProducts();

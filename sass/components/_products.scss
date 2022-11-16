@@ -1,3 +1,6 @@
+// <div class="products product" id="products"></div>
+// <div id="loader"><img src="./images/loader.gif" alt="loader"></div>
+
 .products {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(302.5px, 1fr));
