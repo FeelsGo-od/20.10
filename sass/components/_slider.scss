@@ -39,6 +39,10 @@
         display: flex;
         overflow: hidden;
 
+        @media (min-width: 1605px) {
+            padding: 0px 5px 0px 0px;
+        }
+
         @media (min-width: 1441px) {
             justify-content: center;
         }
@@ -136,9 +140,12 @@
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        line-height: 19px;
         margin: 19px 0 30px;
         width: 79%;
+
+        @media (min-width: 1441px) {
+            font-size: 21px;
+        }
 
         @media (max-width: 1023px) {
             font-size: 18px;

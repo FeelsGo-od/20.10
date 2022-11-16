@@ -21,6 +21,9 @@
 // layout sass
 @import './layout/header';
 
+// pages sass
+@import './pages/home/latest';
+
 body, * {
     margin: 0;
     padding: 0;
@@ -34,4 +37,26 @@ button {
 .wrapper {
     width: 100%;
     overflow-x: hidden;
+}
+
+.title {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    color: #000000;    
+}
+
+.description {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+    padding: 0px 334px;
+    letter-spacing: 0px;
 }

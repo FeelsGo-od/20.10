@@ -157,6 +157,9 @@
     max-width: 100%;
     display: flex;
     overflow: hidden; }
+    @media (min-width: 1605px) {
+      .slider__block {
+        padding: 0px 5px 0px 0px; } }
     @media (min-width: 1441px) {
       .slider__block {
         justify-content: center; } }
@@ -236,9 +239,11 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
     margin: 19px 0 30px;
     width: 79%; }
+    @media (min-width: 1441px) {
+      .slider__description {
+        font-size: 21px; } }
     @media (max-width: 1023px) {
       .slider__description {
         font-size: 18px;
@@ -617,6 +622,72 @@
         .header__searchBtn img {
           height: 85%; } }
 
+.latest {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 75px; }
+  .latest__blocks {
+    display: flex; }
+  .latest__description {
+    margin: 9px 0 55px 0; }
+    @media (max-width: 1024px) {
+      .latest__description {
+        margin-top: 20px; } }
+  .latest__wide {
+    width: 50%; }
+  .latest__narrow {
+    width: 25%;
+    height: 100%; }
+    .latest__narrow .latest__element {
+      width: 98.4%;
+      height: 100%;
+      padding: 144px 0; }
+      .latest__narrow .latest__element img {
+        width: 100%; }
+    .latest__narrow .latest__text {
+      text-align: center;
+      margin: 42px 0; }
+  .latest__element {
+    filter: drop-shadow(0px 38px 25px rgba(0, 0, 0, 0.25));
+    background: #fff;
+    margin-bottom: 63px;
+    transition: all 0.35s ease-in;
+    cursor: pointer; }
+    .latest__element .txt-right {
+      text-align: right;
+      margin-left: auto; }
+    .latest__element:hover {
+      position: relative;
+      bottom: 12px;
+      transition: all 0.4s ease-in; }
+  .latest__category {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #000000; }
+  .latest__slogan {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #000000; }
+  .latest__middle-size {
+    width: 99%;
+    padding: 0 42px; }
+  .latest__middle-text {
+    width: 40%; }
+  .latest__small-size {
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 42px;
+    flex-wrap: wrap; }
+  .latest__small-text {
+    width: 28%; }
+
 body, * {
   margin: 0;
   padding: 0;
@@ -628,3 +699,23 @@ button {
 .wrapper {
   width: 100%;
   overflow-x: hidden; }
+
+.title {
+  font-family: 'Readex Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: center;
+  color: #000000; }
+
+.description {
+  font-family: 'Readex Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+  padding: 0px 334px;
+  letter-spacing: 0px; }

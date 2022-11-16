@@ -91,13 +91,13 @@ function handleSlider() {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis.',
     },
     {
-      bgColor: 'blue',
+      bgColor: 'rgb(182, 182, 249)',
       title: 'The new phones are here take a look. 2',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis. 2',
     },
     {
-      bgColor: 'grey',
+      bgColor: 'rgb(181, 181, 181)',
       title: 'The new phones are here take a look. 3',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis. 3',
@@ -122,7 +122,6 @@ handleDropdown();
 
 function handleHamburger() {
   let btn = document.querySelector('.header__mobile');
-
   hambMenu(btn);
 }
 
