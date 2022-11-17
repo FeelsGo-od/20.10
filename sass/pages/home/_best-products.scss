@@ -1,7 +1,63 @@
 .best-products {
     margin-top: 47px;
-    
+
     &__description {
         margin: 9px 0 56px 0;
+        text-align: center !important;
+    }
+
+    &__blocks {
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 1068px) {
+            flex-direction: column;
+        }
+    }
+
+    &__block {
+        text-align: center;
+        background: #F8F9FA;
+        border-radius: 16px;
+        padding-top: 41px;
+        min-width: 29.1%;
+
+        &:not(&:first-child) {
+            margin-left: 28px;
+        }
+
+        @media (max-width: 1068px) {
+            &:not(&:first-child) {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &__small-t {
+        font-family: 'Readex Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        color: #000000;
+    }
+
+    &__big-t {
+        font-family: 'Readex Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 35px;
+        text-align: center;
+        color: #000000;
+    }
+
+    &__btn {
+        display: flex;
+        border: 1px solid #000000;
+        border-radius: 200px;
+        background: none;
+        padding: 14px 63px;
+        margin: 30px auto;
     }
 }

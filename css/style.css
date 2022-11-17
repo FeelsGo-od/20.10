@@ -745,7 +745,47 @@
 .best-products {
   margin-top: 47px; }
   .best-products__description {
-    margin: 9px 0 56px 0; }
+    margin: 9px 0 56px 0;
+    text-align: center !important; }
+  .best-products__blocks {
+    display: flex;
+    justify-content: center; }
+    @media (max-width: 1068px) {
+      .best-products__blocks {
+        flex-direction: column; } }
+  .best-products__block {
+    text-align: center;
+    background: #F8F9FA;
+    border-radius: 16px;
+    padding-top: 41px;
+    min-width: 29.1%; }
+    .best-products__block:not(.best-products__block:first-child) {
+      margin-left: 28px; }
+    @media (max-width: 1068px) {
+      .best-products__block:not(.best-products__block:first-child) {
+        margin-left: 0; } }
+  .best-products__small-t {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: #000000; }
+  .best-products__big-t {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000; }
+  .best-products__btn {
+    display: flex;
+    border: 1px solid #000000;
+    border-radius: 200px;
+    background: none;
+    padding: 14px 63px;
+    margin: 30px auto; }
 
 @font-face {
   font-family: 'Readex Pro';

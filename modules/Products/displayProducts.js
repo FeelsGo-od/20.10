@@ -147,6 +147,7 @@ export default function displayProducts(
         if (onlyFour) {
           setTimeout(() => {
             handleInfiniteScroll();
+            addCards(currentPage + 1);
           }, 100);
         }
 
