@@ -64,7 +64,10 @@ export default function displayProducts(
         let count = 0;
         products.map((product) => {
           if (onlyFour) count++;
-          if (count > 4) return false;
+          if (count > 4) {
+            if (loader) loader.remove();
+            return false;
+          }
 
           if (product.id < startRange + 1 || product.id > endRange) return;
           createProduct(product);
@@ -79,7 +82,10 @@ export default function displayProducts(
 
         filterRating.map((product) => {
           if (onlyFour) count++;
-          if (count > 4) return false;
+          if (count > 4) {
+            if (loader) loader.remove();
+            return false;
+          }
 
           if (product.id < startRange + 1 || product.id > endRange) return;
 
@@ -93,7 +99,10 @@ export default function displayProducts(
 
         sortedProducts.map((product) => {
           if (onlyFour) count++;
-          if (count > 4) return false;
+          if (count > 4) {
+            if (loader) loader.remove();
+            return false;
+          }
 
           if (product.id < startRange + 1 || product.id > endRange) return;
 
@@ -109,7 +118,10 @@ export default function displayProducts(
 
         sortedByCat.map((product) => {
           if (onlyFour) count++;
-          if (count > 4) return false;
+          if (count > 4) {
+            if (loader) loader.remove();
+            return false;
+          }
 
           if (product.id < startRange + 1 || product.id > endRange) return;
 
@@ -144,11 +156,11 @@ export default function displayProducts(
           addCards(currentPage + 1);
         }
 
-        if (onlyFour) {
+        if (onlyFour && currentPage !== pageCount) {
           setTimeout(() => {
-            handleInfiniteScroll();
             addCards(currentPage + 1);
-          }, 100);
+            handleInfiniteScroll();
+          }, 10);
         }
 
         if (currentPage === pageCount) {

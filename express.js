@@ -66,6 +66,12 @@ router.post('/send_email', function (req, res) {
     return res.send('Error uploading file');
   }
 });
+// add routes here
+router.get('/products', function (req, res) {
+  res.sendFile(
+    path.join(__dirname + '/templates/productsCategories/products.html')
+  );
+});
 
 router.get('/cart', function (req, res) {
   res.sendFile(path.join(__dirname + '/templates/cart.html'));

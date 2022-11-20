@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>California - All Products</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <img class="header__logo" src="../images/logo.svg" alt="california logo">
+            <nav class="header__nav">
+                <div class="header__mobile">
+                    <img src="../images/bars.svg" class="mobile-btn" alt="menu navbar">
+                    <span>Menu</span>
+                </div>
+                <div class="header__close">X</div>
+
+                <ul class="header__links">
+                    <li class="header__link"><a href="/products">all products</a></li>
+                    <li class="header__link header__dropdown">
+                        <div class="header-open_dropdown open_dropdown">
+                            <p>Solutions</p>
+                            <button class="header__dropdown-btn">
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_12)">
+                                        <path d="M11 1L6 6L1 1" stroke="#070847" stroke-width="1.5" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_12">
+                                            <rect width="12" height="8" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="header__dropdown-block dropdown-block">
+                            <ul class="header__dropdown_menu">
+                                <li class="header__link"><a href="">Laptops</a></li>
+                                <li class="header__link"><a href="">Phones</a></li>
+                                <li class="header__link"><a href="">Watches</a></li>
+                                <li class="header__link"><a href="">Tablet</a></li>
+                                <li class="header__link"><a href="">BEST SELLING</a></li>
+                                <li class="header__link"><a href="">Latest&Greatest</a></li>
+                                <li class="header__link"><a href="">BLOG</a></li>
+                                <li class="header__link"><a href="">Newspaper</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__link"><a href="">ABOUT</a></li>
+                    <li class="header__link"><a href="">Support</a></li>
+                </ul>
+            </nav>
+            <div class="header__buttons">
+                <button class="header__button header__searchBtn toggle-input">
+                    <input class="toggled-input" type="text">
+                    <img class="toggle-ic toggle-input" src="../images/search.svg" alt="">
+                </button>
+                <button class="header__button">
+                    <img src="../images/cart.svg" alt="">
+                </button>
+            </div>
+        </header>
+
+            <div class="products all-products" id="products"></div>
+            <div id="loader"><img src="./images/loader.gif" alt="loader"></div>
+    </div>
+
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>
