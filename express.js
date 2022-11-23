@@ -66,11 +66,18 @@ router.post('/send_email', function (req, res) {
     return res.send('Error uploading file');
   }
 });
-// add routes here
+// add new routes right here
 router.get('/products', function (req, res) {
-  res.sendFile(
-    path.join(__dirname + '/templates/productsCategories/products.html')
-  );
+  res.sendFile(path.join(__dirname + '/templates/products.html'));
+});
+router.get('/products/:category', function (req, res) {
+  res.render('category', {
+    category: req.params.category,
+  });
+});
+
+router.get('/about', function (req, res) {
+  res.sendFile(path.join(__dirname + '/templates/about.html'));
 });
 
 router.get('/cart', function (req, res) {
@@ -82,7 +89,7 @@ router.get('/:id', function (req, res) {
   });
 });
 
-app.set('views', path.join(__dirname, 'templates'));
+app.set('views', path.join(__dirname, '/templates'));
 app.set('view engine', 'pug');
 
 app.use('/404', function (req, res) {

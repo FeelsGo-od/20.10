@@ -7,13 +7,14 @@ export default function displayProducts(
     byStock = false,
     onlyFour = false,
 
-    // hardcoded, cause it's usually never changes on eCommerce sites(if I am not mistaken)
+    // refactor this
     smartphones = false,
     watches = false,
     tablet = false,
     laptops = false,
   }
 ) {
+  if (!dest) return;
   let products = [];
   let category = false;
   if (smartphones || watches || tablet || laptops) {
@@ -25,6 +26,11 @@ export default function displayProducts(
 
   function createProduct(product) {
     let description = product.description;
+    let title = product.title;
+    if (title.length >= 27) {
+      title = title.slice(0, 24);
+      title += '...';
+    }
 
     dest.insertAdjacentHTML(
       'beforeend',
@@ -32,7 +38,7 @@ export default function displayProducts(
                 <div class="product__image"><img style="width: 100%; height: 100%; object-fit: contain;" src="${
                   product.thumbnail
                 }" alt=""></div>
-                <div class="product__title">${product.title}</div>
+                <div class="product__title">${title}</div>
                 <div class="product__description">${
                   description.slice(0, 80) + '...'
                 }</div>

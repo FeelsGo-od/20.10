@@ -8,11 +8,22 @@ import addSlider from './modules/Slider/slider.js';
 import animOpen from './modules/Search/animOpen.js';
 import hoverLink from './modules/Dropdown/hoverLink.js';
 import hambMenu from './modules/Dropdown/hambMenu.js';
+import renderHeader from './components/header.js';
+
+function handleRender() {
+  renderHeader();
+}
+
+handleRender();
 
 function handleProducts() {
   let productsElem = document.querySelector('#products');
   let mostSelled = document.querySelector('.most-selled__demo');
   let allProducts = document.querySelector('.all-products');
+  let laptopsProducts = document.querySelector('.laptops');
+  let smartphonesProducts = document.querySelector('.smartphones');
+  let watchesProducts = document.querySelector('.watches');
+  let tabletProducts = document.querySelector('.tablet');
 
   //*   displayProducts(productsElem. {}); // display just all products
 
@@ -28,6 +39,11 @@ function handleProducts() {
   displayProducts(mostSelled, { byStock, onlyFour });
 
   displayProducts(allProducts, {});
+
+  displayProducts(laptopsProducts, { laptops });
+  displayProducts(smartphonesProducts, { smartphones });
+  displayProducts(watchesProducts, { watches });
+  displayProducts(tabletProducts, { tablet });
 
   // displayProducts(productsElem, { byRating, onlyFour }); // sorted products (by rating/stock) AND show only 4 products
 }
