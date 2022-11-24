@@ -40,7 +40,7 @@ export default function addSlider(dest, slides) {
     }, 9500);
 
     document.addEventListener('click', (e) => {
-      console.log(e.target.classList.contains('slider__arrow'));
+      // console.log(e.target.classList.contains('slider__arrow'));
       if (
         e.target.classList.contains('slider__arrow') ||
         e.target.classList.contains('slider__option')
@@ -62,7 +62,7 @@ export default function addSlider(dest, slides) {
     });
   }
 
-  // handleMovement();
+  handleMovement();
 
   //arrows left/right
   function handleSwitchers() {

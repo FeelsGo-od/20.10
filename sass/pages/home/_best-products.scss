@@ -1,6 +1,10 @@
 .best-products {
     margin-top: 47px;
 
+    @media (max-width: 1068px) {
+        padding-top: 26px;
+    }
+
     &__description {
         margin: 9px 0 56px 0;
         text-align: center !important;
@@ -27,8 +31,25 @@
         }
 
         @media (max-width: 1068px) {
+            border-radius: 0;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 47px;
+
             &:not(&:first-child) {
-                margin-left: 0;
+                margin-left: 0px;
+                margin: 0 auto;
+                margin-bottom: 47px;
+            }
+
+            &:last-child {
+                padding-bottom: 47px;
+            }
+        }
+
+        & img {
+            @media (max-width: 1068px) {
+                max-width: 100%;
             }
         }
     }
@@ -59,5 +80,12 @@
         background: none;
         padding: 14px 63px;
         margin: 30px auto;
+        color: #000000;
+        color: inherit;
+
+        @media (max-width: 1400px) {
+            font-size: 16px;
+            font-weight: bold;
+        }
     }
 }

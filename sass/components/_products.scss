@@ -12,6 +12,10 @@
     @media (max-width: 769px) {
         width: 75%;
     }
+
+    @media (max-width: 319px) {
+        grid-template-columns: repeat(auto-fit, minmax(248.5px, 1fr));
+    }
 }
 
 .product {
@@ -34,6 +38,15 @@
 
         @media (max-width: 769px) {
             margin: 0 auto;
+        }
+
+        @media (max-width: 319px) {
+            width: auto;
+        }
+        & img {
+            @media (max-width: 319px) {
+                width: 64% !important;
+            }
         }
     }
 
@@ -62,6 +75,10 @@
         font-size: 18px;
         line-height: 22px;
         color: #000000;
+        
+        @media (max-width: 1068px) {
+            font-weight: bold;
+        }
     }
 }
 

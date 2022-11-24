@@ -7,6 +7,7 @@
 @import './components/search';
 @import './components/subscription';
 @import './components/slider';
+@import './components/blog';
 
 // layout sass
 @import './layout/header';
@@ -14,6 +15,7 @@
 // pages sass
 @import './pages/home/latest';
 @import './pages/home/best-products';
+@import './pages/home/ideas';
 
 @font-face {
     font-family: 'Readex Pro';
@@ -29,6 +31,7 @@ body, * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #000000;
 }
 
 button {
@@ -50,14 +53,13 @@ button {
     color: #000000;  
     
     @media (max-width: 769px) {
-        font-size: 32px;
+        font-size: 26px;
         line-height: unset;
     }
 
-    @media (max-width: 392px) {
-        font-size: 28px;
-        text-align: left;
-        padding-left: 18px;
+    @media (max-width: 334px) {
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
@@ -84,7 +86,6 @@ button {
     @media (max-width: 992px) {
         margin-top: 20px;
         padding: 0px 6%;
-        text-align: justify;
     }
 
     @media (max-width: 769px) {

@@ -8,6 +8,9 @@
   @media (max-width: 769px) {
     .products {
       width: 75%; } }
+  @media (max-width: 319px) {
+    .products {
+      grid-template-columns: repeat(auto-fit, minmax(248.5px, 1fr)); } }
 
 .product {
   cursor: pointer;
@@ -26,6 +29,12 @@
     @media (max-width: 769px) {
       .product__image {
         margin: 0 auto; } }
+    @media (max-width: 319px) {
+      .product__image {
+        width: auto; } }
+    @media (max-width: 319px) {
+      .product__image img {
+        width: 64% !important; } }
   .product__title {
     font-family: 'Readex Pro';
     font-style: normal;
@@ -47,6 +56,9 @@
     font-size: 18px;
     line-height: 22px;
     color: #000000; }
+    @media (max-width: 1068px) {
+      .product__price {
+        font-weight: bold; } }
 
 #loader {
   width: 100%;
@@ -344,6 +356,58 @@
     left: 0; }
   .slider-nextSlide {
     right: 0; }
+
+.blog {
+  margin-top: 20px; }
+  .blog__item {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-out, background 0.3s ease-out;
+    border-radius: 22px; }
+    @media (max-width: 1024px) {
+      .blog__item {
+        flex-direction: column;
+        justify-content: start; } }
+  .blog__image {
+    object-fit: contain;
+    width: 100%; }
+  .blog__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    margin-left: 35px; }
+    @media (max-width: 1296px) {
+      .blog__text {
+        font-size: 19px; } }
+    @media (max-width: 1024px) {
+      .blog__text {
+        font-size: 23px; } }
+    @media (max-width: 879px) {
+      .blog__text {
+        margin-left: 0;
+        font-size: 17px; } }
+    .blog__text p {
+      margin-top: 35px; }
+      @media (max-width: 1296px) {
+        .blog__text p {
+          margin-top: 30px; } }
+      @media (max-width: 1024px) {
+        .blog__text p {
+          margin-top: 19px; } }
+      @media (max-width: 879px) {
+        .blog__text p {
+          margin-top: 14px; } }
+    .blog__text p:first-child {
+      margin-top: 14px; }
+      @media (max-width: 1024px) {
+        .blog__text p:first-child {
+          margin-top: 32px; } }
 
 .header {
   display: flex;
@@ -644,9 +708,24 @@
       .latest__blocks {
         flex-wrap: wrap;
         justify-content: center; } }
+  .latest__title {
+    width: 100% !important; }
+    @media (max-width: 1026px) {
+      .latest__title {
+        text-align: left !important; } }
   .latest__description {
     margin: 9px 0 55px 0;
-    padding: 0px 16%; }
+    padding: 0 8% !important; }
+    @media (max-width: 1026px) {
+      .latest__description {
+        text-align: left !important;
+        font-size: 17px !important;
+        line-height: 26px !important;
+        letter-spacing: -0.21px !important;
+        margin: 9px 0 55px 0;
+        padding: 0 !important;
+        line-height: 29px !important;
+        margin-bottom: 41px !important; } }
   .latest__wide {
     width: 50%; }
     @media (max-width: 1026px) {
@@ -670,6 +749,9 @@
       width: 98.4%;
       height: 100%;
       padding: 144px 0; }
+      @media (max-width: 480px) {
+        .latest__narrow .latest__element {
+          margin-bottom: 26px; } }
       .latest__narrow .latest__element img {
         width: 100%; }
     .latest__narrow .latest__text {
@@ -746,6 +828,9 @@
 
 .best-products {
   margin-top: 47px; }
+  @media (max-width: 1068px) {
+    .best-products {
+      padding-top: 26px; } }
   .best-products__description {
     margin: 9px 0 56px 0;
     text-align: center !important; }
@@ -764,8 +849,20 @@
     .best-products__block:not(.best-products__block:first-child) {
       margin-left: 28px; }
     @media (max-width: 1068px) {
-      .best-products__block:not(.best-products__block:first-child) {
-        margin-left: 0; } }
+      .best-products__block {
+        border-radius: 0;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 47px; }
+        .best-products__block:not(.best-products__block:first-child) {
+          margin-left: 0px;
+          margin: 0 auto;
+          margin-bottom: 47px; }
+        .best-products__block:last-child {
+          padding-bottom: 47px; } }
+    @media (max-width: 1068px) {
+      .best-products__block img {
+        max-width: 100%; } }
   .best-products__small-t {
     font-family: 'Readex Pro';
     font-style: normal;
@@ -787,7 +884,25 @@
     border-radius: 200px;
     background: none;
     padding: 14px 63px;
-    margin: 30px auto; }
+    margin: 30px auto;
+    color: #000000;
+    color: inherit; }
+    @media (max-width: 1400px) {
+      .best-products__btn {
+        font-size: 16px;
+        font-weight: bold; } }
+
+.ideas__title {
+  margin-top: 80px; }
+  @media (max-width: 769px) {
+    .ideas__title {
+      margin-top: 0; } }
+
+.ideas__description {
+  margin: 9px 0 56px 0; }
+  @media (max-width: 992px) {
+    .ideas__description {
+      text-align: center !important; } }
 
 @font-face {
   font-family: 'Readex Pro';
@@ -800,7 +915,8 @@
 body, * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #000000; }
 
 button {
   cursor: pointer; }
@@ -819,13 +935,12 @@ button {
   color: #000000; }
   @media (max-width: 769px) {
     .title {
-      font-size: 32px;
+      font-size: 26px;
       line-height: unset; } }
-  @media (max-width: 392px) {
+  @media (max-width: 334px) {
     .title {
-      font-size: 28px;
-      text-align: left;
-      padding-left: 18px; } }
+      width: 80%;
+      margin: 0 auto; } }
 
 .description {
   font-family: 'Readex Pro';
@@ -847,8 +962,7 @@ button {
   @media (max-width: 992px) {
     .description {
       margin-top: 20px;
-      padding: 0px 6%;
-      text-align: justify; } }
+      padding: 0px 6%; } }
   @media (max-width: 769px) {
     .description {
       margin: 21px 0 36px 0; } }
