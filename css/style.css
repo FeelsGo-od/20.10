@@ -371,9 +371,10 @@
       .blog__item {
         flex-direction: column;
         justify-content: start; } }
-  .blog__image {
-    object-fit: contain;
-    width: 100%; }
+  @media (max-width: 1068px) {
+    .blog__image {
+      object-fit: contain;
+      width: 100%; } }
   .blog__text {
     font-family: 'Inter';
     font-style: normal;
@@ -714,8 +715,7 @@
       .latest__title {
         text-align: left !important; } }
   .latest__description {
-    margin: 9px 0 55px 0;
-    padding: 0 8% !important; }
+    margin: 9px 0 55px 0; }
     @media (max-width: 1026px) {
       .latest__description {
         text-align: left !important;

@@ -17,8 +17,10 @@
     }
 
     &__image {
-        object-fit: contain;
-        width: 100%;
+        @media (max-width: 1068px) {
+            object-fit: contain;
+            width: 100%;
+        }
     }
 
     &__text {
