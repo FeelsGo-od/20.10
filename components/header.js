@@ -32,12 +32,12 @@ export default function renderHeader() {
                     </div>
                     <div class="header__dropdown-block dropdown-block">
                         <ul class="header__dropdown_menu">
-                            <li class="header__link"><a href="products/laptops">Laptops</a></li>
-                            <li class="header__link"><a href="products/smartphones">Phones</a></li>
-                            <li class="header__link"><a href="products/watches">Watches</a></li>
-                            <li class="header__link"><a href="products/tablet">Tablet</a></li>
-                            <li class="header__link"><a href="products/best-selling">BEST SELLING</a></li>
-                            <li class="header__link"><a href="products/latest-greatest">Latest&Greatest</a></li>
+                            <li class="header__link"><a href="/products/laptops">Laptops</a></li>
+                            <li class="header__link"><a href="/products/smartphones">Phones</a></li>
+                            <li class="header__link"><a href="/products/watches">Watches</a></li>
+                            <li class="header__link"><a href="/products/tablet">Tablet</a></li>
+                            <li class="header__link"><a href="/products/best-selling">BEST SELLING</a></li>
+                            <li class="header__link"><a href="/products/latest-greatest">Latest&Greatest</a></li>
                             <li class="header__link"><a href="/blog">BLOG</a></li>
                             <li class="header__link"><a href="/newspaper">Newspaper</a></li>
                         </ul>

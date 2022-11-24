@@ -242,7 +242,7 @@
             "rating": 5.43,
             "stock": 15,
             "brand": "Apple",
-            "category": "laptops",
+            "category": "tablet",
             "thumbnail": "../images/product4.png",
             "images": [
                 "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-air-select-wifi-blue-202203?wid=1765&hei=2000&fmt=jpeg&qlt=95&.v=1645065732688",
@@ -475,7 +475,7 @@
             "rating": 4.43,
             "stock": 15,
             "brand": "Apple",
-            "category": "laptops",
+            "category": "tablet",
             "thumbnail": "../images/product4.png",
             "images": [
                 "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-air-select-wifi-blue-202203?wid=1765&hei=2000&fmt=jpeg&qlt=95&.v=1645065732688",
@@ -493,7 +493,7 @@
             "rating": 5.44,
             "stock": 34,
             "brand": "Apple",
-            "category": "smartphones",
+            "category": "tablet",
             "thumbnail": "../images/product28.webp",
             "images": [
                 "https://dummyjson.com/image/i/products/2/1.jpg",
@@ -511,7 +511,7 @@
             "rating": 5.00,
             "stock": 36,
             "brand": "Samsung",
-            "category": "smartphones",
+            "category": "laptops",
             "thumbnail": "../images/product29.jpeg",
             "images": [
                 ""
@@ -708,7 +708,7 @@
             "rating": 5.43,
             "stock": 15,
             "brand": "Apple",
-            "category": "laptops",
+            "category": "tablet",
             "thumbnail": "../images/product4.png",
             "images": [
                 "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-air-select-wifi-blue-202203?wid=1765&hei=2000&fmt=jpeg&qlt=95&.v=1645065732688",
@@ -759,7 +759,7 @@
             "rating": 4.2,
             "stock": 93,
             "brand": "ACER",
-            "category": "smartphones",
+            "category": "laptops",
             "thumbnail": "../images/product43.jpeg",
             "images": [
                 "https://dummyjson.com/image/i/products/4/1.jpg",
@@ -886,8 +886,8 @@
             "discountPercentage": 4.18,
             "rating": 4.63,
             "stock": 12,
-            "brand": "tablet",
-            "category": "laptops",
+            "brand": "Huawei",
+            "category": "tablet",
             "thumbnail": "https://f01.esfr.pl/si_upload/rich-card/1265843/HUAWEIMATEPAD11WIFI6128GBSZARYRYSIKGEN2KLAWIATURA_1265843_2b.png",
             "images": [
                 "https://acom.pl/media/catalog/product/cache/0f7431f5367b37c067ffd8dcd36cc722/a/p/apple-macbook-pro-13-3-cala-m2-8-core-cpu-10-core-gpu-8gb-ram-256gb-ssd-klawiatura-us-srebrny-silver-23987_2.jpg",
@@ -941,7 +941,7 @@
             "rating": 4.43,
             "stock": 15,
             "brand": "Apple",
-            "category": "laptops",
+            "category": "tablet",
             "thumbnail": "../images/product4.png",
             "images": [
                 "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-air-select-wifi-blue-202203?wid=1765&hei=2000&fmt=jpeg&qlt=95&.v=1645065732688",
