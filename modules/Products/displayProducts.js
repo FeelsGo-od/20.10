@@ -42,9 +42,9 @@ export default function displayProducts(
                 <div class="product__description">${
                   description.slice(0, 80) + '...'
                 }</div>
-                <div class="product__price">$ ${
-                  product.price
-                } USD | in stock: ${product.stock}</div>
+                <div class="product__price">$ ${product.price} USD - amount: ${
+        product.stock
+      } - rating: ${product.rating}</div>
             </a>`
     );
   }
@@ -81,41 +81,6 @@ export default function displayProducts(
           }
 
           if (product.id < startRange + 1 || product.id > endRange) return;
-          createProduct(product);
-        });
-      } else if (byRating) {
-        // sort products by rating
-        let filterRating = products.filter((product) => {
-          return product.rating >= 5;
-        });
-
-        let count = 0;
-
-        filterRating.map((product) => {
-          if (onlyFour) count++;
-          if (count > 4) {
-            if (loader) loader.remove();
-            return false;
-          }
-
-          if (product.id < startRange + 1 || product.id > endRange) return;
-
-          createProduct(product);
-        });
-      } else if (byStock) {
-        // sort products by stock
-        let sortedProducts = products.sort((a, b) => a.stock - b.stock);
-
-        let count = 0;
-
-        sortedProducts.map((product) => {
-          if (onlyFour) count++;
-          if (count > 4) {
-            if (loader) loader.remove();
-            return false;
-          }
-          if (product.id < startRange + 1 || product.id > endRange) return;
-
           createProduct(product);
         });
       } else if (smartphones || watches || tablet || laptops) {
@@ -195,5 +160,38 @@ export default function displayProducts(
 
     handleInfiniteScroll();
     window.addEventListener('scroll', handleInfiniteScroll);
+
+    // Sorting (later will be replaced with REST API...)
+    if (byStock) {
+      let sortedProducts = products.sort((a, b) => a.stock - b.stock);
+      let count = 0;
+
+      sortedProducts.map((product) => {
+        if (onlyFour) count++;
+        if (count > 4) {
+          if (loader) loader.remove();
+          return false;
+        }
+
+        if (loader) loader.remove();
+        createProduct(product);
+      });
+    } else if (byRating) {
+      let filterRating = products.filter((product) => {
+        return product.rating >= 5;
+      });
+      let count = 0;
+
+      filterRating.map((product) => {
+        if (onlyFour) count++;
+        if (count > 4) {
+          if (loader) loader.remove();
+          return false;
+        }
+
+        if (loader) loader.remove();
+        createProduct(product);
+      });
+    }
   });
 }
