@@ -367,6 +367,8 @@
     cursor: pointer;
     transition: box-shadow 0.3s ease-out, background 0.3s ease-out;
     border-radius: 22px; }
+    .blog__item:hover .blog__text {
+      text-decoration: underline; }
     @media (max-width: 1024px) {
       .blog__item {
         flex-direction: column;
@@ -758,6 +760,8 @@
       text-align: center;
       margin: 42px 0; }
   .latest__element {
+    display: block;
+    text-decoration: none;
     -webkit-box-shadow: -4 6px 44px -13px #ebebeb;
     -moz-box-shadow: -4 6px 44px -13px #ebebeb;
     box-shadow: -4px 6px 44px -13px #ebebeb;
@@ -886,7 +890,11 @@
     padding: 14px 63px;
     margin: 30px auto;
     color: #000000;
-    color: inherit; }
+    color: inherit;
+    transition: background 0.3s ease-in-out; }
+    .best-products__btn:hover {
+      border: 1px solid transparent;
+      background: #ececec; }
     @media (max-width: 1400px) {
       .best-products__btn {
         font-size: 16px;

@@ -24,6 +24,7 @@ function handleProducts() {
   let smartphonesProducts = document.querySelector('.smartphones');
   let watchesProducts = document.querySelector('.watches');
   let tabletProducts = document.querySelector('.tablet');
+  let mostSelledProducts = document.querySelector('.best-selling');
 
   //*   displayProducts(productsElem. {}); // display just all products
 
@@ -44,6 +45,7 @@ function handleProducts() {
   displayProducts(smartphonesProducts, { smartphones });
   displayProducts(watchesProducts, { watches });
   displayProducts(tabletProducts, { tablet });
+  displayProducts(mostSelledProducts, { byStock });
 
   // displayProducts(productsElem, { byRating, onlyFour }); // sorted products (by rating/stock) AND show only 4 products
 }

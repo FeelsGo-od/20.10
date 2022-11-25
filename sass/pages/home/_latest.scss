@@ -94,6 +94,8 @@
     }
 
     &__element {
+        display: block;
+        text-decoration: none;
         -webkit-box-shadow: -4 6px 44px -13px #ebebeb;
         -moz-box-shadow: -4 6px 44px -13px #ebebeb;
         box-shadow: -4px 6px 44px -13px #ebebeb;

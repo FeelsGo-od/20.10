@@ -82,6 +82,12 @@
         margin: 30px auto;
         color: #000000;
         color: inherit;
+        transition: background 0.3s ease-in-out;
+
+        &:hover {
+            border: 1px solid transparent;
+            background: #ececec;
+        }
 
         @media (max-width: 1400px) {
             font-size: 16px;

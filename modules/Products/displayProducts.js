@@ -42,7 +42,9 @@ export default function displayProducts(
                 <div class="product__description">${
                   description.slice(0, 80) + '...'
                 }</div>
-                <div class="product__price">$ ${product.price} USD</div>
+                <div class="product__price">$ ${
+                  product.price
+                } USD | in stock: ${product.stock}</div>
             </a>`
     );
   }
@@ -50,25 +52,28 @@ export default function displayProducts(
   fetching('../../data/products.json').then((productsData) => {
     products = productsData.products;
 
-    //products pagination entries
+    //products (loading)pagination entries
     const loader = document.getElementById('loader');
     const productsIncrease = 15;
     const productsLimit = products.length;
-    const pageCount = Math.ceil(productsLimit / productsIncrease);
+    const pagesCount = Math.ceil(productsLimit / productsIncrease);
     let currentPage = 1;
+    let disableThrottle = false;
 
     //add products of current products page
     const addCards = (pageIndex) => {
       currentPage = pageIndex;
-
       const startRange = (pageIndex - 1) * productsIncrease;
       const endRange =
-        currentPage == pageCount ? productsLimit : pageIndex * productsIncrease;
+        currentPage == pagesCount
+          ? productsLimit
+          : pageIndex * productsIncrease;
 
       if (!byRating && !byStock && !category) {
         //show all products
         let count = 0;
         products.map((product) => {
+          // check if there are only four products to show
           if (onlyFour) count++;
           if (count > 4) {
             if (loader) loader.remove();
@@ -109,7 +114,6 @@ export default function displayProducts(
             if (loader) loader.remove();
             return false;
           }
-
           if (product.id < startRange + 1 || product.id > endRange) return;
 
           createProduct(product);
@@ -129,12 +133,17 @@ export default function displayProducts(
             return false;
           }
 
-          if (product.id < startRange + 1 || product.id > endRange) return;
-
-          createProduct(product);
+          if (sortedByCat.length < 11) {
+            createProduct(product);
+            disableThrottle = true;
+          } else {
+            if (product.id < startRange + 1 || product.id > endRange) return;
+            createProduct(product);
+          }
         });
       }
     };
+
     addCards(currentPage);
 
     // optimize infinite-scroll with throttle
@@ -152,6 +161,10 @@ export default function displayProducts(
     };
 
     const handleInfiniteScroll = () => {
+      if (disableThrottle) {
+        if (loader) loader.remove();
+        return;
+      }
       throttle(() => {
         const endOfPage =
           window.innerHeight + (window.pageYOffset + window.innerHeight) >=
@@ -162,14 +175,14 @@ export default function displayProducts(
           addCards(currentPage + 1);
         }
 
-        if (onlyFour && currentPage !== pageCount) {
+        if (onlyFour && currentPage !== pagesCount) {
           setTimeout(() => {
             addCards(currentPage + 1);
             handleInfiniteScroll();
           }, 10);
         }
 
-        if (currentPage === pageCount) {
+        if (currentPage === pagesCount) {
           removeInfiniteScroll();
         }
       }, 1000);
