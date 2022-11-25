@@ -42,9 +42,7 @@ export default function displayProducts(
                 <div class="product__description">${
                   description.slice(0, 80) + '...'
                 }</div>
-                <div class="product__price">$ ${product.price} USD - amount: ${
-        product.stock
-      } - rating: ${product.rating}</div>
+                <div class="product__price">$ ${product.price} USD</div>
             </a>`
     );
   }
