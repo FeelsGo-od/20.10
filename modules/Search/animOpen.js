@@ -23,6 +23,24 @@ export default function searchInput(toggleBtn) {
         toggleBtn.style.border = 'none';
         document.querySelector('.toggle-ic').style.borderLeft = 'none';
       }, 175);
+
+      // Hide Search results (hints)
+      let searchOpacity = document.querySelector('.search__opacity');
+      let searchResults = document.querySelector('.search__results');
+      if (
+        getComputedStyle(searchOpacity).getPropertyValue('display') === 'block'
+      ) {
+        searchOpacity.style.display = 'none';
+        inputBtn.style.filter = 'none';
+      }
+      if (
+        getComputedStyle(searchResults).getPropertyValue('display') === 'flex'
+      ) {
+        searchResults.style.display = 'none';
+      }
+      if (getComputedStyle(input).getPropertyValue('boxShadow') !== 'none') {
+        input.style.boxShadow = '';
+      }
     }
   });
 }

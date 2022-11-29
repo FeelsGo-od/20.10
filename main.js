@@ -27,7 +27,7 @@ function handleProducts() {
   let mostSelledProducts = document.querySelector('.best-selling');
   let bestProducts = document.querySelector('.latest-greatest');
 
-  displayProducts(productsElem, {}); // display just all products
+  // displayProducts(productsElem, {}); // display just all products
 
   let byRating = true;
   let onlyFour = true;
@@ -151,3 +151,17 @@ function handleHamburger() {
 }
 
 handleHamburger();
+
+// disable zoom on mobile devices inputs
+$(document).on('mousedown focus', 'input, textarea, select', function () {
+  $('meta[name=viewport]').remove();
+  $('head').append(
+    '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">'
+  );
+});
+$(document).on('blur', 'input, textarea, select', function () {
+  $('meta[name=viewport]').remove();
+  $('head').append(
+    '<meta name="viewport" content="width=device-width, initial-scale=1">'
+  );
+});
