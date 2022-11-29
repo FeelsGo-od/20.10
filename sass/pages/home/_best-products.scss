@@ -73,6 +73,10 @@
         color: #000000;
     }
 
+    &__link {
+        text-decoration: none;
+    }
+
     &__btn {
         display: flex;
         border: 1px solid #000000;
@@ -82,7 +86,7 @@
         margin: 30px auto;
         color: #000000;
         color: inherit;
-        transition: background 0.3s ease-in-out;
+        transition: background 0.3s ease-in-out, border 0.2s ease-in;
 
         &:hover {
             border: 1px solid transparent;

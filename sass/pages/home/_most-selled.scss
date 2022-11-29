@@ -1,0 +1,15 @@
+.most-selled {
+    @media (max-width: 768px) {
+        margin-top: 20px;
+    }
+    @media (max-width: 480px) {
+        margin-top: 65px;
+    }
+
+    &__description {
+        margin-bottom: 16px !important;
+        @media (max-width: 768px) {
+            margin-bottom: 4.5px !important;
+        }
+    }
+}

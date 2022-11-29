@@ -159,7 +159,7 @@ export default function displayProducts(
     handleInfiniteScroll();
     window.addEventListener('scroll', handleInfiniteScroll);
 
-    // Sorting (later will be replaced with REST API...)
+    // Sorting (later will be replaced with REST API... and also, Image preloading like on Amazon)
     if (byStock) {
       let sortedProducts = products.sort((a, b) => a.stock - b.stock);
       let count = 0;

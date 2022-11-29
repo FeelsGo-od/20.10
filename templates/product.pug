@@ -1,12 +1,15 @@
-script(type='module' src='../main.js')
 doctype html
-head
-  title Product details
-  link(rel='stylesheet' href='../css/style.css')
-block content
-  .product.product-details(id=`${id}`)
-    .product__image
-    .details
-      .buttons
-        button.add-cart Add to cart
-        button.add-favourite Favourite
+html(lang="en")
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title California - #{category}
+    link(rel='icon' type='image/x-icon' href='../images/favicon.png')
+    link(rel='stylesheet' href='../css/style.css')
+  body
+    .wrapper
+      header.header
+      .product.product-details(id=`${id}`)
+        .details
+    script(type='module' src='../main.js')
