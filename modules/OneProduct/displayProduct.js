@@ -95,8 +95,8 @@ export default function displayProduct(destImage, destDetails, id) {
             <p>${found.description}</p>
             <ul>
               <li>Color: <span>Black</span></li>
-              <li>Available: <span>in stock</span></li>
-              <li>Category: <span>Shoes</span></li>
+              <li>Available: <span>${found.stock} in stock</span></li>
+              <li>Category: <span>${found.category}</span></li>
               <li>Shipping Area: <span>All over the world</span></li>
               <li>Shipping Fee: <span>Free</span></li>
             </ul>

@@ -1,5 +1,6 @@
 export default function searchInput(toggleBtn) {
   let input = document.querySelector('.toggled-input');
+  let inputBtn = document.querySelector('.toggle-ic');
 
   if (!toggleBtn) return;
 
@@ -8,6 +9,9 @@ export default function searchInput(toggleBtn) {
     toggleBtn.style.width = '175px';
     toggleBtn.style.border = '1px solid grey';
     document.querySelector('.toggle-ic').style.borderLeft = '1px solid grey';
+    // inputBtn.addEventListener('click', () => {
+    //   window.location.href = ''
+    // });
   });
 
   document.addEventListener('click', (e) => {

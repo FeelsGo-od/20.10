@@ -67,6 +67,10 @@ router.post('/send_email', function (req, res) {
   }
 });
 // add new routes right here
+router.get('/search/:keywords', function (req, res) {
+  res.sendFile(path.join(__dirname + '/templates/search.html'));
+});
+
 router.get('/products', function (req, res) {
   res.sendFile(path.join(__dirname + '/templates/products.html'));
 });

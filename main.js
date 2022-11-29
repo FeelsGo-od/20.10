@@ -27,7 +27,7 @@ function handleProducts() {
   let mostSelledProducts = document.querySelector('.best-selling');
   let bestProducts = document.querySelector('.latest-greatest');
 
-  //*   displayProducts(productsElem. {}); // display just all products
+  displayProducts(productsElem, {}); // display just all products
 
   let byRating = true;
   let onlyFour = true;
