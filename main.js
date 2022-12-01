@@ -1,3 +1,4 @@
+// !move imports in /imports folder(create it)
 import displayProducts from './modules/Products/displayProducts.js';
 import displayProduct from './modules/OneProduct/displayProduct.js';
 import addToCart from './modules/Cart/addToCart.js';
@@ -17,6 +18,8 @@ function handleRender() {
 handleRender();
 
 function handleProducts() {
+  // !again use that url string with category(if its category)(/products/:category) to set certain class and display products in that
+  // !if its /products then display all products in that class, if / ,then only four mostselled products.
   let productsElem = document.querySelector('#products');
   let mostSelled = document.querySelector('.most-selled__demo');
   let allProducts = document.querySelector('.all-products');
@@ -33,6 +36,7 @@ function handleProducts() {
   let onlyFour = true;
   let byStock = true;
 
+  // !refactor it by checking url /products/:category(if url contains it) and set :category to variable category to sort by it
   let smartphones = 'smartphones';
   let watches = 'watches';
   let tablet = 'tablet';
@@ -108,6 +112,7 @@ function handleSearching() {
 handleSearching();
 
 function handleSlider() {
+  // !move it to /data
   let slides = [
     {
       bgColor: '#DCE5E2',
@@ -151,17 +156,3 @@ function handleHamburger() {
 }
 
 handleHamburger();
-
-// disable zoom on mobile devices inputs
-$(document).on('mousedown focus', 'input, textarea, select', function () {
-  $('meta[name=viewport]').remove();
-  $('head').append(
-    '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">'
-  );
-});
-$(document).on('blur', 'input, textarea, select', function () {
-  $('meta[name=viewport]').remove();
-  $('head').append(
-    '<meta name="viewport" content="width=device-width, initial-scale=1">'
-  );
-});

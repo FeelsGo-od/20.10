@@ -981,7 +981,8 @@
       .latest__title {
         text-align: left !important; } }
   .latest__description {
-    margin: 9px 0 55px 0; }
+    margin: 9px 0 55px 0;
+    padding: 0px 20% !important; }
     @media (max-width: 1026px) {
       .latest__description {
         text-align: left !important;
