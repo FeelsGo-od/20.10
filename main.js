@@ -1,4 +1,3 @@
-// !move imports in /imports folder(create it)
 import displayProducts from './modules/Products/displayProducts.js';
 import displayProduct from './modules/OneProduct/displayProduct.js';
 import addToCart from './modules/Cart/addToCart.js';
@@ -18,38 +17,31 @@ function handleRender() {
 handleRender();
 
 function handleProducts() {
-  // !again use that url string with category(if its category)(/products/:category) to set certain class and display products in that
-  // !if its /products then display all products in that class, if / ,then only four mostselled products.
-  let productsElem = document.querySelector('#products');
+  let dest = '';
+  let category = '';
+  if (window.location.href.indexOf('/products/') !== -1) {
+    category = window.location.href.slice(
+      window.location.href.indexOf('/products/') + 10
+    );
+    dest =
+      '.' +
+      window.location.href.slice(
+        window.location.href.indexOf('/products/') + 10
+      );
+  }
   let mostSelled = document.querySelector('.most-selled__demo');
   let allProducts = document.querySelector('.all-products');
-  let laptopsProducts = document.querySelector('.laptops');
-  let smartphonesProducts = document.querySelector('.smartphones');
-  let watchesProducts = document.querySelector('.watches');
-  let tabletProducts = document.querySelector('.tablet');
   let mostSelledProducts = document.querySelector('.best-selling');
   let bestProducts = document.querySelector('.latest-greatest');
-
-  // displayProducts(productsElem, {}); // display just all products
 
   let byRating = true;
   let onlyFour = true;
   let byStock = true;
 
-  // !refactor it by checking url /products/:category(if url contains it) and set :category to variable category to sort by it
-  let smartphones = 'smartphones';
-  let watches = 'watches';
-  let tablet = 'tablet';
-  let laptops = 'laptops';
-
   displayProducts(mostSelled, { byStock, onlyFour });
 
-  displayProducts(allProducts, {});
-
-  displayProducts(laptopsProducts, { laptops });
-  displayProducts(smartphonesProducts, { smartphones });
-  displayProducts(watchesProducts, { watches });
-  displayProducts(tabletProducts, { tablet });
+  displayProducts(allProducts, {}); //display all products
+  displayProducts(dest !== '' && document.querySelector(dest), { category });
   displayProducts(mostSelledProducts, { byStock });
   displayProducts(bestProducts, { byRating });
 
@@ -112,7 +104,6 @@ function handleSearching() {
 handleSearching();
 
 function handleSlider() {
-  // !move it to /data
   let slides = [
     {
       bgColor: '#DCE5E2',

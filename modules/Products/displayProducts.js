@@ -7,22 +7,12 @@ export default function displayProducts(
     byStock = false,
     onlyFour = false,
 
-    // refactor this
-    smartphones = false,
-    watches = false,
-    tablet = false,
-    laptops = false,
+    category = '',
   }
 ) {
-  if (!dest) return;
+  if (!dest || dest === '') return;
+  console.log(dest);
   let products = [];
-  let category = false;
-  if (smartphones || watches || tablet || laptops) {
-    if (smartphones) category = smartphones;
-    if (watches) category = watches;
-    if (tablet) category = tablet;
-    if (laptops) category = laptops;
-  }
 
   function createProduct(product) {
     let description = product.description;
@@ -67,11 +57,12 @@ export default function displayProducts(
           ? productsLimit
           : pageIndex * productsIncrease;
 
-      if (!byRating && !byStock && !category) {
+      if (!byRating && !byStock && category === '') {
         //show all products
         let count = 0;
         products.map((product) => {
           // check if there are only four products to show
+          // !refactor this(make separate function)
           if (onlyFour) count++;
           if (count > 4) {
             if (loader) loader.remove();
@@ -81,7 +72,7 @@ export default function displayProducts(
           if (product.id < startRange + 1 || product.id > endRange) return;
           createProduct(product);
         });
-      } else if (smartphones || watches || tablet || laptops) {
+      } else if (category !== '') {
         // sort products by category
         let sortedByCat = products.filter((product) => {
           return product.category === category && product;
