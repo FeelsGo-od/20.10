@@ -26,41 +26,41 @@ export default function addSlider(dest, slides) {
 
   function handleMovement() {
     //auto-slide
-    // now, it has bug. Try to check if user is on page. If not then stop autoslide
-    // let timeout = setTimeout(() => {
-    //   let currentSlide = position.toString()[0];
+    // now, it has bug. Try to check if user is on page. If not then stop autoslide or search of another solution on internet
+    let timeout = setTimeout(() => {
+      let currentSlide = position.toString()[0];
 
-    //   if (currentSlide < slides.length - 1) {
-    //     position += 100;
-    //   } else {
-    //     position = 0;
-    //   }
-    //   sliderBlocks.style.left = `-${position}%`;
-
-    //   handleMovement();
-    // }, 9500);
-
-    document.addEventListener('click', (e) => {
-      // console.log(e.target.classList.contains('slider__arrow'));
-      if (
-        e.target.classList.contains('slider__arrow') ||
-        e.target.classList.contains('slider__option')
-      ) {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => {
-          let currentSlide = position.toString()[0];
-
-          if (currentSlide < slides.length - 1) {
-            position += 100;
-          } else {
-            position = 0;
-          }
-          sliderBlocks.style.left = `-${position}%`;
-
-          handleMovement();
-        }, 9500);
+      if (currentSlide < slides.length - 1) {
+        position += 100;
+      } else {
+        position = 0;
       }
-    });
+      sliderBlocks.style.left = `-${position}%`;
+
+      handleMovement();
+    }, 20500);
+
+    // document.addEventListener('click', (e) => {
+    //   // console.log(e.target.classList.contains('slider__arrow'));
+    //   if (
+    //     e.target.classList.contains('slider__arrow') ||
+    //     e.target.classList.contains('slider__option')
+    //   ) {
+    //     clearTimeout(timeout);
+    //     timeout = setTimeout(() => {
+    //       let currentSlide = position.toString()[0];
+
+    //       if (currentSlide < slides.length - 1) {
+    //         position += 100;
+    //       } else {
+    //         position = 0;
+    //       }
+    //       sliderBlocks.style.left = `-${position}%`;
+
+    //       handleMovement();
+    //     }, 9500);
+    //   }
+    // });
   }
 
   handleMovement();
