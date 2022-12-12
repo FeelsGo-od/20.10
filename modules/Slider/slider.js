@@ -24,20 +24,21 @@ export default function addSlider(dest, slides) {
     );
   });
 
-  //auto-slide
-  // function handleMovement() {
-  //   let timeout = setTimeout(() => {
-  //     let currentSlide = position.toString()[0];
+  function handleMovement() {
+    //auto-slide
+    // now, it has bug. Try to check if user is on page. If not then stop autoslide
+    // let timeout = setTimeout(() => {
+    //   let currentSlide = position.toString()[0];
 
-  //     if (currentSlide < slides.length - 1) {
-  //       position += 100;
-  //     } else {
-  //       position = 0;
-  //     }
-  //     sliderBlocks.style.left = `-${position}%`;
+    //   if (currentSlide < slides.length - 1) {
+    //     position += 100;
+    //   } else {
+    //     position = 0;
+    //   }
+    //   sliderBlocks.style.left = `-${position}%`;
 
-  //     handleMovement();
-  //   }, 9500);
+    //   handleMovement();
+    // }, 9500);
 
     document.addEventListener('click', (e) => {
       // console.log(e.target.classList.contains('slider__arrow'));
