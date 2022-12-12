@@ -60,27 +60,27 @@ export default function addSlider(dest, slides) {
       }
     };
 
-    // document.addEventListener('click', (e) => {
-    //   // console.log(e.target.classList.contains('slider__arrow'));
-    //   if (
-    //     e.target.classList.contains('slider__arrow') ||
-    //     e.target.classList.contains('slider__option')
-    //   ) {
-    //     clearTimeout(timeout);
-    //     timeout = setTimeout(() => {
-    //       let currentSlide = position.toString()[0];
+    document.addEventListener('click', (e) => {
+      // console.log(e.target.classList.contains('slider__arrow'));
+      if (
+        e.target.classList.contains('slider__arrow') ||
+        e.target.classList.contains('slider__option')
+      ) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => {
+          let currentSlide = position.toString()[0];
 
-    //       if (currentSlide < slides.length - 1) {
-    //         position += 100;
-    //       } else {
-    //         position = 0;
-    //       }
-    //       sliderBlocks.style.left = `-${position}%`;
+          if (currentSlide < slides.length - 1) {
+            position += 100;
+          } else {
+            position = 0;
+          }
+          sliderBlocks.style.left = `-${position}%`;
 
-    //       handleMovement();
-    //     }, 9500);
-    //   }
-    // });
+          handleMovement();
+        }, 9500);
+      }
+    });
   }
 
   handleMovement();
