@@ -19,6 +19,7 @@ app.use('/images', express.static(path.join(__dirname + '/images')));
 app.use('/fonts', express.static(path.join(__dirname + '/fonts')));
 app.use('/css', express.static(path.join(__dirname + '/css')));
 app.use('/main.js', express.static(path.join(__dirname + '/main.js')));
+app.use('/data', express.static(path.join(__dirname + '/data')));
 
 // access to req body (body parser)
 import bodyParser from 'body-parser';
