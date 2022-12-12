@@ -56,7 +56,7 @@ export default function addSlider(dest, slides) {
           sliderBlocks.style.left = `-${position}%`;
 
           handleMovement();
-        }, 9500);
+        }, 20500);
       }
     };
 
@@ -78,7 +78,7 @@ export default function addSlider(dest, slides) {
           sliderBlocks.style.left = `-${position}%`;
 
           handleMovement();
-        }, 9500);
+        }, 20500);
       }
     });
   }
