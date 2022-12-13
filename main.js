@@ -10,9 +10,11 @@ import animOpen from './modules/Search/animOpen.js';
 import hoverLink from './modules/Dropdown/hoverLink.js';
 import hambMenu from './modules/Dropdown/hambMenu.js';
 import renderHeader from './components/header.js';
+import renderFooter from './components/footer.js';
 
 function handleRender() {
   renderHeader();
+  renderFooter();
 }
 
 handleRender();

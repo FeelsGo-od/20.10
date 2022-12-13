@@ -8,7 +8,7 @@
         width: 90%;
         margin: 0 auto;
         padding: 0 73px;
-        padding-bottom: 80px;
+        padding-bottom: 39px;
         border-bottom: 1px solid #DCE5E2;
 
         @media (max-width: 447px) {
@@ -17,9 +17,14 @@
 
         @media (min-width: 770px) {
             grid-template-columns: 40% 20% 20% 20%;
+            grid-template-rows: minmax(100px, 152px);
             justify-content: center;
             grid-gap: 28px;
             row-gap: 31px;
+        }
+
+        @media (min-width: 1103px) and (max-width: 1293px) {
+            padding-bottom: 80px;
         }
 
         @media (min-width: 1103px) {
@@ -80,6 +85,23 @@
 
         a {
             text-decoration: none;
+        }
+    }
+
+    &__madeBy {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 32px;
+        margin-bottom: 4px;
+        font-family: 'Readex Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+
+        a {
+            font-family: 'Inter';
         }
     }
 }
