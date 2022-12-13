@@ -1,6 +1,8 @@
 let footer = document.querySelector('footer');
 
 export default function renderFooter() {
+  if (!footer) return;
+
   footer.insertAdjacentHTML(
     'afterbegin',
     `
@@ -45,7 +47,7 @@ export default function renderFooter() {
         </div>
     </div>
     <div class="footer__madeBy">
-        Layout Made By: <a href="">Andrewdev</a>
+        Layout Made By: <a href="https://freelance-portfolio-five.vercel.app/">Andrewdev</a>
     </div>
         `
   );

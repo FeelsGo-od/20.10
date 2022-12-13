@@ -53,3 +53,9 @@
         box-shadow: none;
     }
 }
+
+header .search__results a:last-child {
+    border-radius: 15px;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+}

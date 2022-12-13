@@ -1,6 +1,8 @@
 let header = document.querySelector('header');
 
 export default function renderHeader() {
+  if (!header) return;
+
   header.insertAdjacentHTML(
     'afterbegin',
     `
