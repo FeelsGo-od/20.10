@@ -1,6 +1,6 @@
 import fetching from '../fetching.js';
 
-export default function search(resultsBlock, input) {
+export default function HeaderSearch(resultsBlock, input) {
   fetching('../../data/products.json').then((productsData) => {
     let products = productsData.products;
 
@@ -15,7 +15,7 @@ export default function search(resultsBlock, input) {
 
       // Show search results(hints)
       document.querySelector('.search__opacity').style.display = 'block';
-      document.querySelector('.search').style.border =
+      document.querySelector('.header-search').style.border =
         '1px solid #4f4b4b !important';
       document.querySelector('.search__btn').style.filter = 'invert(1)';
       document.querySelector('.search__btn').style.borderLeft =

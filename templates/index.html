@@ -117,6 +117,33 @@
                     <p>We Make It Easy To Find The Great Design Talent, Easier...</p>
                 </div>
             </div>
+            <div class="ideas__button-block">
+                <button class="ideas__button">See All</button>
+                <img src="../images/more-btn.svg" alt="see more articles">
+            </div>
+        </section>
+
+        <section class="page-search">
+            <h1 class="page-search__title title">Looking for anything else?</h1>
+            <div class="page-search__block">
+                <button class="page-search__btn">
+                    <img class="page-search__icon" src="../images/page-search-ic.svg" alt="search button">
+                </button>
+                <input class="page-search__input search__input" placeholder="Search keyword" type="text">
+            </div>
+            <div class="page-search__results search__results"></div>
+        </section>
+
+        <section class="subscription">
+            <div class="subscription__block">
+                <div class="subscription__title">Never miss a thing</div>
+                <div class="subscription__description">Sign up for texts to be notified about our best offers on the perfect gifts.</div>
+                <img src="../images/sub-img.png" class="subscription__image">
+                <form class="subscription__form" action="/send_email" method="POST">
+                    <input class="subscription__input" type="text" placeholder="Your email" enctype="multipart/form-data" name="email" required>
+                    <button class="subscription__btn" type="submit">Sign up</button>
+                </form>
+            </div>
         </section>
     </div>
 

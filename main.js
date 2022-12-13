@@ -2,7 +2,8 @@ import displayProducts from './modules/Products/displayProducts.js';
 import displayProduct from './modules/OneProduct/displayProduct.js';
 import addToCart from './modules/Cart/addToCart.js';
 import displayCart from './modules/Cart/displayCart.js';
-import search from './modules/Search/search.js';
+import HeaderSearch from './modules/Search/HeaderSearch.js';
+import PageSearch from './modules/Search/PageSearch.js';
 import deleteFromCart from './modules/Cart/deleteFromCart.js';
 import addSlider from './modules/Slider/slider.js';
 import animOpen from './modules/Search/animOpen.js';
@@ -86,19 +87,23 @@ function handleCart() {
 handleCart();
 
 function handleSearching() {
-  let searchElements = document.querySelectorAll('.search');
+  let headerSearchElement = document.querySelector('.header-search');
+  let headerSearchInput = headerSearchElement.querySelector('.search__input');
+  let headerSearchResults =
+    headerSearchElement.querySelector('.search__results');
 
-  if (!searchElements) return;
-
-  for (let searchElement of searchElements) {
-    let searchInput = searchElement.querySelector('.search__input');
-    let searchResults = searchElement.querySelector('.search__results');
-
-    search(searchResults, searchInput);
-  }
+  HeaderSearch(headerSearchResults, headerSearchInput);
 
   let toggleBtn = document.querySelector('.toggle-input');
   animOpen(toggleBtn);
+
+  let pageSearchElement = document.querySelector('.page-search');
+  let pageSearchInput = pageSearchElement.querySelector('.search__input');
+  let pageSearchResults = pageSearchElement.querySelector('.search__results');
+
+  if (!pageSearchElement) return;
+
+  PageSearch(pageSearchResults, pageSearchInput);
 }
 
 handleSearching();

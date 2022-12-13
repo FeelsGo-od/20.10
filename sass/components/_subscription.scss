@@ -15,6 +15,21 @@
         background: #DCE5E2;
         padding: 47px 180px 43.5px 180px;
         text-align: center;
+
+        @media (max-width: 1144px) {
+            width: 73% !important;   
+            padding: 47px 60px 43.5px 60px;
+        }
+
+        @media (max-width: 519px) {
+            width: 80% !important;
+            padding: 47px 30px 43.5px 30px;
+        }
+
+        @media (max-width: 356px) {
+            width: 88% !important;
+            padding: 47px 19px 43.5px 19px;
+        }
     }
 
     &__title {
@@ -38,6 +53,18 @@
 
     &__image {
         margin-top: 14.5px;
+
+        @media (max-width: 1024px) {
+            width: 36%;
+        }
+
+        @media (max-width: 459px) {
+            width: 42%;
+        }
+
+        @media (max-width: 395px) {
+            width: 52%;
+        }
     }
 
     &__form {
@@ -52,6 +79,16 @@
         border: 1px solid #000000;
         border-radius: 54px 0px 0px 54px;
         padding: 16px 0 17px 32px;
+        padding-right: 6rem;
+
+        @media (min-width: 1269px) {
+            padding-right: 11rem;
+        }
+
+        @media (max-width: 690px) {
+            padding-right: 2rem;
+            padding: 5px 0 5px 19px;
+        }
     }
 
     &__btn {
@@ -60,5 +97,17 @@
         border-radius: 0px 200px 200px 0px;
         color: #fff;
         padding: 16px 32px 17px;
+
+        @media (max-width: 419px) {
+            padding: 11px 25px 11px;
+        }
+
+        @media (max-width: 395px) {
+            padding: 12px 14px 13px;
+        }
+
+        @media (max-width: 315px) {
+            padding: 12px 19px 13px;
+        }
     }
 }

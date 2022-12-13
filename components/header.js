@@ -48,7 +48,7 @@ export default function renderHeader() {
             </ul>
         </nav>
         <div class="header__buttons">
-            <button class="header__button header__searchBtn toggle-input search">
+            <button class="header__button header__searchBtn toggle-input header-search">
                 <div class="search__opacity"></div>
                 <input class="toggled-input search__input" type="text">
                 <img class="toggle-ic toggle-input search__btn" src="../images/search.svg" alt="">
