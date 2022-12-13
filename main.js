@@ -98,10 +98,9 @@ function handleSearching() {
   animOpen(toggleBtn);
 
   let pageSearchElement = document.querySelector('.page-search');
+  if (!pageSearchElement) return;
   let pageSearchInput = pageSearchElement.querySelector('.search__input');
   let pageSearchResults = pageSearchElement.querySelector('.search__results');
-
-  if (!pageSearchElement) return;
 
   PageSearch(pageSearchResults, pageSearchInput);
 }

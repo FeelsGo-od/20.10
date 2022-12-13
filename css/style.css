@@ -997,6 +997,69 @@
     .toggle-ic {
       height: 85%; } }
 
+.footer {
+  margin-top: 19px;
+  background: #F8F9FA;
+  padding-top: 45px; }
+  .footer__blocks {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 73px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #DCE5E2; }
+    @media (max-width: 447px) {
+      .footer__blocks {
+        padding-left: 23px; } }
+    @media (min-width: 770px) {
+      .footer__blocks {
+        grid-template-columns: 40% 20% 20% 20%;
+        justify-content: center;
+        grid-gap: 28px;
+        row-gap: 31px; } }
+    @media (min-width: 1103px) {
+      .footer__blocks {
+        grid-template-columns: 50% 12.5% 12.5% 12.5% 12.5%;
+        justify-content: center;
+        grid-gap: 28px;
+        row-gap: 31px; } }
+  @media (min-width: 770px) {
+    .footer__info {
+      padding-right: 26px; } }
+  @media (min-width: 1025px) {
+    .footer__info {
+      padding-right: 14px; } }
+  .footer__description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-top: 18px; }
+  @media (max-width: 769px) {
+    .footer__block {
+      margin-top: 20px; } }
+  .footer__title {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000; }
+  .footer__links {
+    list-style: none; }
+  .footer__link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #000000;
+    margin-top: 8px; }
+    .footer__link a {
+      text-decoration: none; }
+
 .latest {
   margin: 0 auto;
   width: 90%;
