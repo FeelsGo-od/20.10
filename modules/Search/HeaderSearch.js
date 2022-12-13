@@ -49,7 +49,7 @@ export default function HeaderSearch(resultsBlock, input) {
           resultsBlock.insertAdjacentHTML(
             'beforeend',
             `
-                <a href="${foundItem.id}">${itemTitle}</a>
+                <a href="/${foundItem.id}">${itemTitle}</a>
             `
           );
         });

@@ -2,6 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
+@media (max-width: 768px) {
+    .product-imgs {
+        margin-top: 40px;
+    }
+}
+
 .card-wrapper {
     max-width: 1100px;
     margin: 0 auto;
@@ -19,6 +25,7 @@
 
 .img-showcase img {
     min-width: 100%;
+    object-fit: cover;
 }
 
 .img-select {
@@ -106,6 +113,7 @@
 
 .product-content {
     padding: 2rem 1rem;
+    font-family: 'Inter';
 }
 
 .product-title {
@@ -113,18 +121,11 @@
     text-transform: capitalize;
     font-weight: 700;
     position: relative;
-    color: #12263a;
     margin: 1rem 0;
-}
-
-.product-title::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 4px;
-    width: 80px;
-    background: #12263a;
+    font-family: 'Inter';
+    font-style: normal;
+    line-height: 28px;
+    color: #000000;
 }
 
 .product-link {
@@ -174,8 +175,8 @@
 
 .product-detail h2 {
     text-transform: capitalize;
-    color: #12263a;
     padding-bottom: 0.6rem;
+    font-family: 'Inter';
 }
 
 .product-detail p {
@@ -194,7 +195,7 @@
     list-style: none;
     background: url(shoes_images/checked.png) left center no-repeat;
     background-size: 18px;
-    padding-left: 1.7rem;
+    // padding-left: 1.7rem;
     margin: 0.4rem 0;
     font-weight: 600;
     opacity: 0.9;

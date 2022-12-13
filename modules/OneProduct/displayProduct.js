@@ -75,7 +75,7 @@ export default function displayProduct(destImage, destDetails, id) {
         <!-- card right -->
         <div class="product-content">
           <h2 class="product-title">${found.title}</h2>
-          <a href="#" class="product-link">add to favorite</a>
+          <!-- <a href="#" class="product-link">add to favorite</a> -->
           <div class="product-rating">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -86,7 +86,7 @@ export default function displayProduct(destImage, destDetails, id) {
           </div>
   
           <div class="product-price">
-            <p class="last-price">Old Price: <span>$257.00</span></p>
+            <!-- <p class="last-price">Old Price: <span>$257.00</span></p> -->
             <p class="new-price">New Price: <span>$${found.price} (5%)</span></p>
           </div>
   
@@ -102,15 +102,15 @@ export default function displayProduct(destImage, destDetails, id) {
             </ul>
           </div>
   
-          <div class="purchase-info">
+          <!-- <div class="purchase-info">
             <input type="number" min="0" value="1">
             <button type="button" class="btn">
               Add to Cart <i class="fas fa-shopping-cart"></i>
             </button>
             <button type="button" class="btn">Compare</button>
-          </div>
+          </div> -->
   
-          <div class="social-links">
+          <!-- <div class="social-links">
             <p>Share At: </p>
             <a href="#">
               <i class="fab fa-facebook-f"></i>
@@ -127,7 +127,7 @@ export default function displayProduct(destImage, destDetails, id) {
             <a href="#">
               <i class="fab fa-pinterest"></i>
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>`

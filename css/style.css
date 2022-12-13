@@ -65,6 +65,10 @@
   width: 100%;
   text-align: center; }
 
+@media (max-width: 768px) {
+  .product-imgs {
+    margin-top: 40px; } }
+
 .card-wrapper {
   max-width: 1100px;
   margin: 0 auto; }
@@ -78,7 +82,8 @@
   transition: all 0.5s ease; }
 
 .img-showcase img {
-  min-width: 100%; }
+  min-width: 100%;
+  object-fit: cover; }
 
 .img-select {
   display: flex;
@@ -153,24 +158,19 @@
   padding: 12px 0; }
 
 .product-content {
-  padding: 2rem 1rem; }
+  padding: 2rem 1rem;
+  font-family: 'Inter'; }
 
 .product-title {
   font-size: 3rem;
   text-transform: capitalize;
   font-weight: 700;
   position: relative;
-  color: #12263a;
-  margin: 1rem 0; }
-
-.product-title::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 4px;
-  width: 80px;
-  background: #12263a; }
+  margin: 1rem 0;
+  font-family: 'Inter';
+  font-style: normal;
+  line-height: 28px;
+  color: #000000; }
 
 .product-link {
   text-decoration: none;
@@ -211,8 +211,8 @@
 
 .product-detail h2 {
   text-transform: capitalize;
-  color: #12263a;
-  padding-bottom: 0.6rem; }
+  padding-bottom: 0.6rem;
+  font-family: 'Inter'; }
 
 .product-detail p {
   font-size: 0.9rem;
@@ -228,7 +228,6 @@
   list-style: none;
   background: url(shoes_images/checked.png) left center no-repeat;
   background-size: 18px;
-  padding-left: 1.7rem;
   margin: 0.4rem 0;
   font-weight: 600;
   opacity: 0.9; }
