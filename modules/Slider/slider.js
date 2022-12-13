@@ -26,7 +26,7 @@ export default function addSlider(dest, slides) {
 
   function handleMovement() {
     //auto-slide
-    // now, it has bug. Try to check if user is on page. If not then stop autoslide or search of another solution on internet
+    // now, it has bug. Maybe setInterval will work better
     let timeout = setTimeout(() => {
       let currentSlide = position.toString()[0];
 
@@ -83,7 +83,7 @@ export default function addSlider(dest, slides) {
     });
   }
 
-  handleMovement();
+  // handleMovement();
 
   //arrows left/right
   function handleSwitchers() {
