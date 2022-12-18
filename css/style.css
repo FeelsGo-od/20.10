@@ -420,7 +420,7 @@ header .search__results a:last-child {
   .subscription__input::placeholder {
     color: grey;
     font-family: 'Inter';
-    font-size: 14px; }
+    font-size: 14.2px; }
   @media (min-width: 1269px) {
     .subscription__input {
       padding-right: 11rem; } }
@@ -1104,9 +1104,6 @@ header .search__results a:last-child {
         justify-content: center; } }
   .latest__title {
     width: 100% !important; }
-    @media (max-width: 1026px) {
-      .latest__title {
-        text-align: left !important; } }
     @media (max-width: 769px) {
       .latest__title {
         padding: 0px 6% !important; } }
@@ -1116,13 +1113,13 @@ header .search__results a:last-child {
     @media (max-width: 1026px) {
       .latest__description {
         text-align: left !important;
-        font-size: 17.5px !important;
+        font-size: 16px !important;
         line-height: 26px !important;
-        letter-spacing: 0.3px !important;
+        letter-spacing: 0.2px !important;
         margin: 9px 0 55px 0;
         padding: 0 !important;
-        line-height: 29px !important;
-        margin-bottom: 41px !important; } }
+        line-height: 28px !important;
+        margin-bottom: 64.2px !important; } }
     @media (max-width: 769px) {
       .latest__description {
         padding: 0px 6% !important; } }
@@ -1151,7 +1148,8 @@ header .search__results a:last-child {
       padding: 144px 0; }
       @media (max-width: 769px) {
         .latest__narrow .latest__element {
-          padding: 15px 0 15px 0; } }
+          padding: 15px 0 15px 0;
+          margin-bottom: 55px; } }
       @media (max-width: 480px) {
         .latest__narrow .latest__element {
           margin-bottom: 26px; } }
@@ -1356,7 +1354,6 @@ header .search__results a:last-child {
         margin-bottom: 4.5px !important; } }
   @media (max-width: 768px) {
     .most-selled .product {
-      border-bottom: 1px solid #e9e2e2;
       padding-bottom: 25px; } }
 
 .page-search {
