@@ -1,4 +1,6 @@
 .most-selled {
+    margin-top: 23px;
+    
     @media (max-width: 768px) {
         margin-top: 20px;
     }
@@ -10,6 +12,13 @@
         margin-bottom: 16px !important;
         @media (max-width: 768px) {
             margin-bottom: 4.5px !important;
+        }
+    }
+
+    & .product {
+        @media (max-width: 768px) {
+            border-bottom: 1px solid #e9e2e2;
+            padding-bottom: 25px;
         }
     }
 }

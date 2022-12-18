@@ -1,8 +1,12 @@
 .best-products {
     margin-top: 47px;
 
+    @media (min-width: 1024px) {
+        margin-top: 107px;
+    }
+
     @media (max-width: 1068px) {
-        padding-top: 26px;
+        margin-top: 79px;
     }
 
     &__description {
@@ -90,7 +94,7 @@
 
         &:hover {
             border: 1px solid transparent;
-            background: #ececec;
+            background: #efefef;
         }
 
         @media (max-width: 1400px) {

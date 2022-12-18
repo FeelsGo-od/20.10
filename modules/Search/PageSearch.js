@@ -23,7 +23,9 @@ export default function PageSearch(resultsBlock, input) {
 
       let count = 0;
 
-      if (filtered.length == 0) {
+      if (value == '') {
+        resultsBlock.innerHTML = '';
+      } else if (filtered.length == 0) {
         resultsBlock.innerHTML = 'Not found';
       } else {
         resultsBlock.innerHTML = '';

@@ -11,7 +11,6 @@ export default function displayProducts(
   }
 ) {
   if (!dest || dest === '') return;
-  console.log(dest);
   let products = [];
 
   function createProduct(product) {

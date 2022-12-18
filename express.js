@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const router = express.Router();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 // display html files
 app.use(express.static(__dirname));
